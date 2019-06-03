@@ -13,6 +13,6 @@ React (Front-end)
 Ruby on Rails (Back-end)
 
 # WireFrames:
-![](./images/accountPage.png)
-![](./images/editProfile.png)
-![](./images/discoverPPL.png)
+![](/images/accountPage.png)
+![](/images/editProfile.png)
+![](/images/discoverPPL.png)
