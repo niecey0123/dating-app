@@ -20,4 +20,4 @@ Ruby on Rails (Back-end)
 
 # ERD 
 
-![](/images/erd.jpg)
+![](/images/erd2019.jpg)
