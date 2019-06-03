@@ -21,23 +21,28 @@ Easy Access To Viewing Matches Near you.
 
 # Project TimeLine:
  
- # Monday ** Day 1 **
+ # Monday
+ ** Day 1 **
 
  Build Out DataBase, Setup working routes
  
- # Tuesday ** Day 2 ** 
+ # Tuesday 
+ ** Day 2 ** 
  
   Create React APP, Setup Component Structure, Render Data On Page
   
-  # Wednesday ** Day 3 **
+  # Wednesday
+  ** Day 3 **
   
   Start Styling, Using CSS Library (Bulma and/or Bootstrap), Focus on features
   
-  # Thursday ** Day 4 **
+  # Thursday 
+  ** Day 4 **
   
   Site Testing, Add more features if necessary
   
-  # Friday ** Day 5 **
+  # Friday 
+  ** Day 5 **
   
   Deployment!
   
