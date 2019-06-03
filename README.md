@@ -16,3 +16,8 @@ Ruby on Rails (Back-end)
 ![](/images/accountPage.png)
 ![](/images/editProfile.png)
 ![](/images/discoverPPL.png)
+
+
+# ERD 
+
+![](/images/erd.jpg)
