@@ -48,11 +48,8 @@ Easy Access To Viewing Pets Near you.
   
 
 # WireFrames:
-![](/images/accountPage.png)
-![](/images/editProfile.png)
-![](/images/discoverPPL.png)
+to be continued
 
 
 # ERD 
-
-![](/images/erd2019.jpg)
+![erd2019](https://user-images.githubusercontent.com/47402849/58885885-f8ea9500-86b0-11e9-9e14-292b141abd6a.jpg)
