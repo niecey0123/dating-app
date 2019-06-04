@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 2019_06_04_143005) do
   create_table "matches", force: :cascade do |t|
     t.bigint "pet_id"
     t.bigint "owner_id"
-    t.date "date_joined"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["owner_id"], name: "index_matches_on_owner_id"

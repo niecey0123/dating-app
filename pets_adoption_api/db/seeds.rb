@@ -26,3 +26,10 @@ owner7=Owner.create(name:'Iyanna',age:45,email:'teacherByday@fakemail.com',phone
 owner8=Owner.create(name:'Ethel',age:55,email:'granniesWithFannies@fakemail.com',phone_number:'347-445-0098',location:'Long Island',photo:'',description:'Widowed and in need of some company. After my husband passed I havent had to care for anyone. I miss being depended upon...Looking for my new best friend.')
 owner9=Owner.create(name:'Sadia',age:19,email:'freshmanOfASU@fakemail.com',phone_number:'646-872-1123',location:'Bronx',photo:'https://collegelifemadeeasy.com/wp-content/uploads/2017/11/r.jpg',description:'Just graduated High school and off to college in a few weeks, Currently looking for my new dorm pet to take along the ride.')
 owner10=Owner.create(name:'Sole',age:28,email:'soul2soul@fakemail.com',phone_number:'646-887-9987',location:'Bronx',photo:'https://www.stylevore.com/wp-content/uploads/2018/09/39401512_2063246623708010_8403980869068390400_n-700x875.jpg',description:'Ive dealt with depression for years in college, I was told that I was Crazy and lots of people never understood me. So I want to start building a bond with a furry buddy to help boost my confidence to speak to others.')
+
+
+owner1.pets.push(pet1, pet2)
+owner2.pets.push(pet3, pet4)
+owner3.pets.push(pet5)
+owner4.pets.push(pet6, pet7,pet8)
+owner5.pets.push(pet10)

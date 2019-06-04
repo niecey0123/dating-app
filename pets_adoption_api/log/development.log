@@ -841,3 +841,1436 @@ Migrating to CreateMatches (20190604143005)
   ↳ db/seeds.rb:28
   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:28
+Started GET "/" for ::1 at 2019-06-04 15:15:29 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/student_121/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/student_121/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/student_121/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (6.8ms)
+Completed 200 OK in 27ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for ::1 at 2019-06-04 15:15:33 -0400
+  
+ActionController::RoutingError (uninitialized constant PetsController):
+  
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+Started GET "/pets" for ::1 at 2019-06-04 15:18:18 -0400
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:5
+Completed 200 OK in 53ms (Views: 26.1ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-04 15:27:53 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/student_121/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/student_121/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 10ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/owners/1/pets" for ::1 at 2019-06-04 15:27:56 -0400
+Processing by PetsController#index as HTML
+  Parameters: {"owner_id"=>"1"}
+Completed 404 Not Found in 76ms (ActiveRecord: 56.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pet without an ID):
+  
+app/controllers/pets_controller.rb:6:in `index'
+Started GET "/owners/1/pets" for ::1 at 2019-06-04 15:29:47 -0400
+Processing by PetsController#index as HTML
+  Parameters: {"owner_id"=>"1"}
+  [1m[36mOwner Load (0.6ms)[0m  [1m[34mSELECT  "owners".* FROM "owners" WHERE "owners"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:6
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 6.7ms)
+
+
+  
+ActiveRecord::HasManyThroughAssociationNotFoundError (Could not find the association :matchs in model Owner):
+  
+app/controllers/pets_controller.rb:7:in `index'
+Started GET "/favicon.ico" for ::1 at 2019-06-04 15:29:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (9.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (238.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pets_adoption_api_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (208.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pets_adoption_api_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (569.3ms)[0m  [1m[35mCREATE DATABASE "pets_adoption_api_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (450.0ms)[0m  [1m[35mCREATE DATABASE "pets_adoption_api_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "matches" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (22.1ms)[0m  [1m[35mCREATE TABLE "matches" ("id" bigserial primary key, "pet_id" bigint, "owner_id" bigint, "date_joined" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_owner_id" ON "matches"  ("owner_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_pet_id" ON "matches"  ("pet_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "owners" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (13.5ms)[0m  [1m[35mCREATE TABLE "owners" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone_number" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE "pets" ("id" bigserial primary key, "name" character varying, "breed" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190604143005)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190604142402),
+(20190604142639);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (14.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 19:42:44.867466"], ["updated_at", "2019-06-04 19:42:44.867466"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "matches" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (30.4ms)[0m  [1m[35mCREATE TABLE "matches" ("id" bigserial primary key, "pet_id" bigint, "owner_id" bigint, "date_joined" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_owner_id" ON "matches"  ("owner_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_pet_id" ON "matches"  ("pet_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "owners" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "owners" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone_number" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (12.1ms)[0m  [1m[35mCREATE TABLE "pets" ("id" bigserial primary key, "name" character varying, "breed" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190604143005)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190604142402),
+(20190604142639);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 19:42:45.017813"], ["updated_at", "2019-06-04 19:42:45.017813"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (1.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-06-04 19:42:45.023662"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPet Create (0.8ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "SnowFlake"], ["breed", "American Eskimo"], ["photo", "https://i.etsystatic.com/6017700/r/il/cc00bc/1440852274/il_794xN.1440852274_zwy2.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "Neither shy nor aggressive, Eskies are always alert and friendly, though a bit conservative when making new friends."], ["created_at", "2019-06-04 19:42:45.093643"], ["updated_at", "2019-06-04 19:42:45.093643"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Piper"], ["breed", "Australian Cattle"], ["photo", "https://i.pinimg.com/736x/3d/60/e9/3d60e948872b0cf4a3df756278750c61--blue-heelers-australian-cattle-dog.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "They hava a natural affinity for obedience and enjoys playtime"], ["created_at", "2019-06-04 19:42:45.110305"], ["updated_at", "2019-06-04 19:42:45.110305"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Brownie"], ["breed", "Beagle"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg"], ["location", "Queens"], ["age", 3], ["description", "Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and—thanks to its pleading expression—cute."], ["created_at", "2019-06-04 19:42:45.113661"], ["updated_at", "2019-06-04 19:42:45.113661"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Spirit"], ["breed", "Cardigan Welsh Corgi"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Cardigan-Welsh-Corgi-1.jpg"], ["location", "Queens"], ["age", 3], ["description", "Cardis are trainable, faithful, and vigilant guardians with a “big dog” bark."], ["created_at", "2019-06-04 19:42:45.117947"], ["updated_at", "2019-06-04 19:42:45.117947"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Silky"], ["breed", "Afghan Hound"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/14145006/Afghan-Hound.86820153.jpg"], ["location", "New York"], ["age", 2], ["description", "Afghans are independent, dignified, and aloof in general, but they are affectionate and extremely loyal to humans they have bonded with."], ["created_at", "2019-06-04 19:42:45.122543"], ["updated_at", "2019-06-04 19:42:45.122543"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "WilmsFord"], ["breed", "Cesky Terrier"], ["photo", "https://vetstreet.brightspotcdn.com/dims4/default/e6a995a/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F04%2Fd6%2F5bd898f44eb08d58ecf40becffbd%2Fcesky-terrier-1.jpg"], ["location", "New York"], ["age", 2], ["description", "The Cesky Terrier, national dog of the Czech Republic, is a clever and adventurous playmate for kids and an eager walking buddy for the folks. "], ["created_at", "2019-06-04 19:42:45.127159"], ["updated_at", "2019-06-04 19:42:45.127159"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "JigglyPuff"], ["breed", "Coton de Tulear"], ["photo", "https://images1.americanlisted.com/nlarge/coton-de-tulear-puppy-for-sale-adoption-rescue-americanlisted_114662633.jpg"], ["location", "Long Island"], ["age", 1], ["description", "The Coton de Tulear, “Royal Dog of Madagascar,” is a bright, happy-go-lucky companion dog whose favorite activities include clowning, cavorting, and following their special human around the house."], ["created_at", "2019-06-04 19:42:45.132589"], ["updated_at", "2019-06-04 19:42:45.132589"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Draco"], ["breed", "Norrbottenspets"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Norrbottenspets-2.jpg"], ["location", "Long Island"], ["age", 1], ["description", "They are a small-sized hunting dog of Spitz-type, which was thought to be extinct but survived as a farm and hunting dog in the Northern parts of Sweden and Finland."], ["created_at", "2019-06-04 19:42:45.139964"], ["updated_at", "2019-06-04 19:42:45.139964"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Pixxie"], ["breed", "Lhasa Apso"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/09130555/Lhasa-Apso.jpg"], ["location", "Bronx"], ["age", 2], ["description", "Smart,confident, and complex, Lhasas are family comedians but regally aloof with strangers."], ["created_at", "2019-06-04 19:42:45.145234"], ["updated_at", "2019-06-04 19:42:45.145234"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Chanel"], ["breed", "StabyHoun"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/26173552/Stabyhoun.30135865.jpg"], ["location", "Bronx"], ["age", 3], ["description", "Although occasionally somewhat willful by nature, Stabyhouns are obedient, gentle, and patient dogs, who are deeply fond of their family, wanting to please their owners."], ["created_at", "2019-06-04 19:42:45.150136"], ["updated_at", "2019-06-04 19:42:45.150136"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mary"], ["email", "Mary&ThePussyCats@fakemail.com"], ["phone_number", "212-336-0087"], ["photo", "https://d2ck0sxsjau14o.cloudfront.net/wp-content/uploads/2018/10/young-attractive-woman.jpg"], ["location", "New York"], ["age", 36], ["description", " Mom of 3 with the love and Home for a lil puppy. I have have dogs in the past and is currently Searching for my fury baby!"], ["created_at", "2019-06-04 19:42:45.172598"], ["updated_at", "2019-06-04 19:42:45.172598"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Steph"], ["email", "StephCurryWitThePot@fakemail.com"], ["phone_number", "178-002-3367"], ["photo", "https://cdn.pixabay.com/photo/2017/08/07/00/33/people-2597995_960_720.jpg"], ["location", "New York"], ["age", 28], ["description", "Looking for a show stopper, Full with spunk and is easy to train. Currently have 2 small dogs in need of a bestie."], ["created_at", "2019-06-04 19:42:45.181307"], ["updated_at", "2019-06-04 19:42:45.181307"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mOwner Create (1.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mark & Beth"], ["email", "DogLovers200@fakemail.com"], ["phone_number", "876-209-9981"], ["photo", "data:image/jpeg;base64,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"], ["location", "Brooklyn"], ["age", 42], ["description", "We are a Fun lovingg couple with no children looking to fill a missing piece in our puzzle. Low mantainence Preferred!, Hypoallergenic a must!"], ["created_at", "2019-06-04 19:42:45.186741"], ["updated_at", "2019-06-04 19:42:45.186741"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mOwner Create (0.3ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Kevin"], ["email", "KevMaster212@fakemail.com"], ["phone_number", "718-900-3000"], ["photo", "https://files.insidify.com/uploads/discovery/happy-black-man.png"], ["location", "Brooklyn"], ["age", 37], ["description", "Single Dad with 7 year old son, Looking for the best kitty for him to bond with!"], ["created_at", "2019-06-04 19:42:45.190834"], ["updated_at", "2019-06-04 19:42:45.190834"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Charles"], ["email", "KittyMan44@fakemail.com"], ["phone_number", "917-213-0213"], ["photo", "https://i.dailymail.co.uk/i/pix/2014/04/16/article-2606478-1D26D5FA00000578-317_634x424.jpg"], ["location", "Queens"], ["age", 41], ["description", "Cat lover at heart, If It was up to me Id have a santuary full of them!... Looking to add another furry feline to mix."], ["created_at", "2019-06-04 19:42:45.195463"], ["updated_at", "2019-06-04 19:42:45.195463"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Suzanne"], ["email", "vetLA@fakemail.com"], ["phone_number", "770-876-2346"], ["photo", "https://blogdottwomenandatruckdotcom.files.wordpress.com/2015/07/dr.jpg"], ["location", "Queens"], ["age", 45], ["description", "My profession surrounds me around animals every day, Now looking for my own to love and shelter."], ["created_at", "2019-06-04 19:42:45.199984"], ["updated_at", "2019-06-04 19:42:45.199984"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Iyanna"], ["email", "teacherByday@fakemail.com"], ["phone_number", "425-228-2876"], ["photo", "https://www.jefferson.kyschools.us/sites/default/files/Math%20Blk%20Female%20tchr%20at%20board.jpg"], ["location", "Long Island"], ["age", 45], ["description", "Teacher by day and lonely at night. Would love to have a furry friend waiting at home for me!"], ["created_at", "2019-06-04 19:42:45.204395"], ["updated_at", "2019-06-04 19:42:45.204395"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Ethel"], ["email", "granniesWithFannies@fakemail.com"], ["phone_number", "347-445-0098"], ["photo", ""], ["location", "Long Island"], ["age", 55], ["description", "Widowed and in need of some company. After my husband passed I havent had to care for anyone. I miss being depended upon...Looking for my new best friend."], ["created_at", "2019-06-04 19:42:45.208685"], ["updated_at", "2019-06-04 19:42:45.208685"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sadia"], ["email", "freshmanOfASU@fakemail.com"], ["phone_number", "646-872-1123"], ["photo", "https://collegelifemadeeasy.com/wp-content/uploads/2017/11/r.jpg"], ["location", "Bronx"], ["age", 19], ["description", "Just graduated High school and off to college in a few weeks, Currently looking for my new dorm pet to take along the ride."], ["created_at", "2019-06-04 19:42:45.213551"], ["updated_at", "2019-06-04 19:42:45.213551"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mOwner Create (0.3ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sole"], ["email", "soul2soul@fakemail.com"], ["phone_number", "646-887-9987"], ["photo", "https://www.stylevore.com/wp-content/uploads/2018/09/39401512_2063246623708010_8403980869068390400_n-700x875.jpg"], ["location", "Bronx"], ["age", 28], ["description", "Ive dealt with depression for years in college, I was told that I was Crazy and lots of people never understood me. So I want to start building a bond with a furry buddy to help boost my confidence to speak to others."], ["created_at", "2019-06-04 19:42:45.220058"], ["updated_at", "2019-06-04 19:42:45.220058"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (208.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pets_adoption_api_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (216.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pets_adoption_api_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (606.3ms)[0m  [1m[35mCREATE DATABASE "pets_adoption_api_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (480.4ms)[0m  [1m[35mCREATE DATABASE "pets_adoption_api_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "matches" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "matches" ("id" bigserial primary key, "pet_id" bigint, "owner_id" bigint, "date_joined" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_owner_id" ON "matches"  ("owner_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_pet_id" ON "matches"  ("pet_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "owners" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (13.8ms)[0m  [1m[35mCREATE TABLE "owners" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone_number" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (17.1ms)[0m  [1m[35mCREATE TABLE "pets" ("id" bigserial primary key, "name" character varying, "breed" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (13.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190604143005)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190604142402),
+(20190604142639);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 19:46:30.689325"], ["updated_at", "2019-06-04 19:46:30.689325"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "matches" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE "matches" ("id" bigserial primary key, "pet_id" bigint, "owner_id" bigint, "date_joined" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_owner_id" ON "matches"  ("owner_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_pet_id" ON "matches"  ("pet_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "owners" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "owners" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone_number" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "pets" ("id" bigserial primary key, "name" character varying, "breed" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190604143005)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190604142402),
+(20190604142639);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (11.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 19:46:30.838743"], ["updated_at", "2019-06-04 19:46:30.838743"]]
+  ↳ db/schema.rb:13
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-06-04 19:46:30.850471"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPet Create (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "SnowFlake"], ["breed", "American Eskimo"], ["photo", "https://i.etsystatic.com/6017700/r/il/cc00bc/1440852274/il_794xN.1440852274_zwy2.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "Neither shy nor aggressive, Eskies are always alert and friendly, though a bit conservative when making new friends."], ["created_at", "2019-06-04 19:46:30.915729"], ["updated_at", "2019-06-04 19:46:30.915729"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Piper"], ["breed", "Australian Cattle"], ["photo", "https://i.pinimg.com/736x/3d/60/e9/3d60e948872b0cf4a3df756278750c61--blue-heelers-australian-cattle-dog.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "They hava a natural affinity for obedience and enjoys playtime"], ["created_at", "2019-06-04 19:46:30.925514"], ["updated_at", "2019-06-04 19:46:30.925514"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Brownie"], ["breed", "Beagle"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg"], ["location", "Queens"], ["age", 3], ["description", "Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and—thanks to its pleading expression—cute."], ["created_at", "2019-06-04 19:46:30.930852"], ["updated_at", "2019-06-04 19:46:30.930852"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Spirit"], ["breed", "Cardigan Welsh Corgi"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Cardigan-Welsh-Corgi-1.jpg"], ["location", "Queens"], ["age", 3], ["description", "Cardis are trainable, faithful, and vigilant guardians with a “big dog” bark."], ["created_at", "2019-06-04 19:46:30.933947"], ["updated_at", "2019-06-04 19:46:30.933947"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Silky"], ["breed", "Afghan Hound"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/14145006/Afghan-Hound.86820153.jpg"], ["location", "New York"], ["age", 2], ["description", "Afghans are independent, dignified, and aloof in general, but they are affectionate and extremely loyal to humans they have bonded with."], ["created_at", "2019-06-04 19:46:30.950941"], ["updated_at", "2019-06-04 19:46:30.950941"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "WilmsFord"], ["breed", "Cesky Terrier"], ["photo", "https://vetstreet.brightspotcdn.com/dims4/default/e6a995a/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F04%2Fd6%2F5bd898f44eb08d58ecf40becffbd%2Fcesky-terrier-1.jpg"], ["location", "New York"], ["age", 2], ["description", "The Cesky Terrier, national dog of the Czech Republic, is a clever and adventurous playmate for kids and an eager walking buddy for the folks. "], ["created_at", "2019-06-04 19:46:30.955449"], ["updated_at", "2019-06-04 19:46:30.955449"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "JigglyPuff"], ["breed", "Coton de Tulear"], ["photo", "https://images1.americanlisted.com/nlarge/coton-de-tulear-puppy-for-sale-adoption-rescue-americanlisted_114662633.jpg"], ["location", "Long Island"], ["age", 1], ["description", "The Coton de Tulear, “Royal Dog of Madagascar,” is a bright, happy-go-lucky companion dog whose favorite activities include clowning, cavorting, and following their special human around the house."], ["created_at", "2019-06-04 19:46:30.959688"], ["updated_at", "2019-06-04 19:46:30.959688"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Draco"], ["breed", "Norrbottenspets"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Norrbottenspets-2.jpg"], ["location", "Long Island"], ["age", 1], ["description", "They are a small-sized hunting dog of Spitz-type, which was thought to be extinct but survived as a farm and hunting dog in the Northern parts of Sweden and Finland."], ["created_at", "2019-06-04 19:46:30.963939"], ["updated_at", "2019-06-04 19:46:30.963939"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Pixxie"], ["breed", "Lhasa Apso"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/09130555/Lhasa-Apso.jpg"], ["location", "Bronx"], ["age", 2], ["description", "Smart,confident, and complex, Lhasas are family comedians but regally aloof with strangers."], ["created_at", "2019-06-04 19:46:30.968622"], ["updated_at", "2019-06-04 19:46:30.968622"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Chanel"], ["breed", "StabyHoun"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/26173552/Stabyhoun.30135865.jpg"], ["location", "Bronx"], ["age", 3], ["description", "Although occasionally somewhat willful by nature, Stabyhouns are obedient, gentle, and patient dogs, who are deeply fond of their family, wanting to please their owners."], ["created_at", "2019-06-04 19:46:30.973280"], ["updated_at", "2019-06-04 19:46:30.973280"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mary"], ["email", "Mary&ThePussyCats@fakemail.com"], ["phone_number", "212-336-0087"], ["photo", "https://d2ck0sxsjau14o.cloudfront.net/wp-content/uploads/2018/10/young-attractive-woman.jpg"], ["location", "New York"], ["age", 36], ["description", " Mom of 3 with the love and Home for a lil puppy. I have have dogs in the past and is currently Searching for my fury baby!"], ["created_at", "2019-06-04 19:46:30.993752"], ["updated_at", "2019-06-04 19:46:30.993752"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Steph"], ["email", "StephCurryWitThePot@fakemail.com"], ["phone_number", "178-002-3367"], ["photo", "https://cdn.pixabay.com/photo/2017/08/07/00/33/people-2597995_960_720.jpg"], ["location", "New York"], ["age", 28], ["description", "Looking for a show stopper, Full with spunk and is easy to train. Currently have 2 small dogs in need of a bestie."], ["created_at", "2019-06-04 19:46:30.998577"], ["updated_at", "2019-06-04 19:46:30.998577"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mOwner Create (4.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mark & Beth"], ["email", "DogLovers200@fakemail.com"], ["phone_number", "876-209-9981"], ["photo", "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTExIVFhUXGBUXGBgVFRcXFxgXFxcXGBUXFxUYHSggGBolHRcVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lHyYtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAEDBAYCBwj/xAA8EAABAwEGAwYFAgQGAwEAAAABAAIRAwQFEiExQVFhcQYigZGhsRMywdHwQuEHFFLxIzNicoKSJGOiQ//EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EACMRAAICAgICAgMBAAAAAAAAAAABAhEDIRIxBEETIjJRYXH/2gAMAwEAAhEDEQA/APY1m+0Xahln7rSMW59gOau9o7z+DTMZEgyeA+5Xk19031KhLnYWZZ4hOYz3y6lWQ0ze2lRzXOmphEAuAESdkEva+nVDP84/L9OU+QICGvqhlNzACWaHvCAdOOqAtknIGOJhSi7NJRvH/wBzsuMtHjmmtXaM0x3HS7lnHideqBd3c+UfUyojWY05DPoh4hWGLHeNQuD6jiTnMnjl+cIV22W7EHDduc8W7rMU7SS7M5DMq0bZD54tAPsVCwnZrxLGtg7yOXH85La3BfRxMBPdz3/UC2fAgheYWeXRGYGnTRaawy0tjaTMbndU3RKs9ooVw4AghTgrHXAHtaDixAQSMxAO8bha9pkIxb0dJJFMoUOnC5XTVCCKSSSogkkySsg8pJklCDylKZJQgpSlJMoQeU4TJwFCCKZdJKizlMnKZWUPKSZOFCCSSSUIeMdoe0bqxLQ+MRcNjOuXg4hZ173NaMMDXEBMTxGpHTToq15icgYInXiDkfziV1RpF0F3P5Y+xVotkzLW1gkhrge66OHMHRUbRagdHRwzgeWyltbABlPOUJAGKCPBRkRM17iYy8R9kvhuM5AHyXVos+EAg5j1GxUrKuIf6vdUEiEMcBAHVdsY6dNiPRX6AcYkSOKL2W5i7QTyzyQOaQyMG+iC4abWuGJoOmRkD0Xpl1OpOA7sHaQIPiMis5dVxAa4geo/utVYLKGZf2PUaIVK2G4NIO2GzsAgDLhw5DlyV8IfZXQiDHSmmZ9iSXSaFChl01NCcKFjFJPCUKiCCdNCdQgyUJFJWQSUJJ1RBoShJMTChB06CXr2hZSyHePk3xJyWUtnbitJADQeAl0dTAVWXR6MmXk9TtVaXHOs5vMZeWLL0Vyx9pawj/yp5PDD7ZqWSj0wrlZKx9qn/r+G7m1xHoQjlmvmm/ceBB/dWUEpThRsqA6EFdqyDymTJKEPmyvUggmc8x1Bg/eOqjFNgMwePdMSDvGh6FcuPxKYB+Zsab7SOuR8CuKdXu56jjx3B9VZDuu/Bnq06HkVWrAag5KRxjuuzadOUqrhLSQqLL7ny0Hhl7fdV6TY90zSRlsdQuqEkxx+6EJGzuGiHsAIyOa0t30MAhZrsxkADxI9YC1zDksk5bOhjj9UXaEIjScEFZUhW6VVXCZJ47DFN6s06xBHBDqD5VtnBaouzDONMKtK6CHXTVc/4jjOHGQ2dw0AE9JlEQrFCKQTOcBqo/jBQhIkuBVTmooQkCSi+Mug8KEOiUgUgkVCDymSCdQhyqNuqEiAVPaasIZWqqm6CjGzOXtcjaklzj5rMXldOGY06kfgW6tBQS005J3SeZp+PR59aLKWnMN/+fcpqFVzf1saPzgIWnt92MO0efjogNqu8NOTkalYtwotWS2zljc7/Y36opRtT5+Yt6uk/wDUGFlsbhkCT6k+akxOyLyAOEx0yRWBR6FdV54T/mE565RPgttdtsFVsgg9F4fRvgA9xrnR0w+Jyy6LRXPfr2PxOdmeDhHhmmLaFtbPXAEll7P2mloyPjB9UlOLK5I8KZRDDMxPlwMqOuyDi2OR4hG7wswxT+h0HpOvuFQLRm05ffQH19EIZQIMYT4fT85LioZ9PTT7Kau6DB4x0OqgJ1/NNVCHLnHI7j6KWy1IdPCI8FGM8uS5pCD0ULPQ7hqtDR4+pR6nVB0Xn13W6MI/N1rrrqlwkrFljWzdhlaC7TmrdBqHB0Knbr5wZNzdsggrHylSNPVtjabcT3AAbkqnd3aFtV8M0n5isTetGo5ralV5Jc7C1g6HOPLzRq6bK5p4DJOk+K0Z4R5t2em3Y0BgaCTG5MyNirFWph6nRZOwXk6mRwRG13xTY34r3ADbkOacsiasy5MMosIvqScyuXOWUs/aWlWefh1AY2B9uSO2etiaCh+T0Bwov/FTCsoJXDgrc2VxLRtAUrHTospet9MoAlx0Wesv8RXtcXPoOFIES4atadCRw5q4zb2W4HqNOpsVVtFrdTIk5JrHamVmNqMIIcAQRvKodqHkWao4ataXDwEopXxtAx7phuz1mvEtKetVjLdYv+HN6uql4cf0g+R/dHr4tgmGnTdBHJceTGPF9+KJLQ9U3lBrPVtRJONjhOQ3Vqx27HIcML26tPuOSGUrHRhWieshtducq/UcqNqOyUO9Au2AaaLPW9w0eInQojetYj81WatVumWnMZ+CZFCZkFcYZI8xp+dVAHkgzP5ouarie80wYg8MtDITMJPAHqIPXcJqEsVKtUae66ev3RWxW94MQM9hnPkM0NNE5Z+TgVesmERixfnTorUiqNbQtZDRk7wiPUykoKFsAaIBjbX7JJvIXxMzeLSHYD3mkGPQwfRCKwzkHXL/AK7/AHWy7aXG+z1z/Q4gg7TpI9J4SsXaCc8tDJ4jnHDJLQRC5hnFEiRPXZcVtctEQuiyVKji1oLg0SeAGx9lHXu2qwnuEgSTHBW2glGT6QNc+c+C6a9cGic8jlqmYNFCg5cFnx1APFegUqYa2Asf2bqBrhPKVsHFYszfI6HjpcSheNYtGWZOSEilWJkAA8XA+wWjFIawrNJwBQxlQyWO2UrmuZxcH1CXERmchloA3QCUQquwOwjUq/TrgBAbzJL5BiEUnZMcaCdVxAmVmO2VitFWlTew46QguYN8J3Ve/LfVLcLHkHQBvH3JW5uWwupUWMecWXen+o5lWrTsTnkujzKlQf8AEY9lKpTBcBOENDZOmWbtdTwXsd0WfBSa0mTEk8SVWq2Broy3CMMaGhMVyezJJpIUJ4UX8yJhTsIKOhZg+2dwvqFuDOXZ5nT+6D0Oy9rMsOCHYQ5wBJLRkAQTHkF6jVpSocGFDtaD5A3s3dH8pSFNriT6DoNlbvGXtfTIyc0g+I4q3S4lAzbcdRwJzkiOiuU6QePHzf8AhW7P3YLHTDQ/HUIhztBxho4KS8rSGMLnEAcScs09oq4czopX2dtVkOAIOoO6Td6NfHirKdnvBoADSIG4Op3Ks1WiphqNye31G4KBs7JNpvLqdR7Af0gy3yKMWCzuZkc+YUfeiaa/pYcqtoZlKuFRPCEhjL6cW8xtv4LMWyox2Y7p4ajwPBbO/wCkIMbrC2qkMR1CfAzZCCQNvIrn4QOYPmUnVR+T9l1Twn9JJ6QmCiWzmDqPEhFrEXA9wDwM+myoWd4nMeEz7fdXKFbOMwPzRTbJpGmpUXlolwmOKSHU2NIBg+qSPiByPYb5umnaqZp1RlsRq08QvHO2HZipZntxRniAcNHwSdNiZ02XttWo4HJsqG9Lvp2imadVoLT5g7EHYqA2eM9kX4KVpps/zDgqDLMsEtMcYJH/AGRSi1ppNc6STlrvuhHaa4a1iqYg7CR8jhkDkJIPTIg/VXLhvVloBpuGGpqW6S6Pmp8+LfFJywb2joeLljx4Pv0Q07MzG2m5gl52HGdfZQ3r2WbkWDCZEgcOS0DboaQXBzg4RDtxHAKS1VCInPiYifBJUmtjp4k9GRZT+G4EAZQDl9FoLPXEAZeEwoa9hYXEkKWm2MsvAIsjUkJxJwZZJ4JBygdVKjqV4CRxNPMvfzKFWm0k6blO+uNyhpdLiNQESQLn6JbNh+NSBMk1GDLbMaleqtYMPgvKbA0Nr0flaMbduY0AXq9mMhOh0Y/I7VHLqjabC9+g24k5ADmh9a9XETIbwESfE6Kv2qtrWgEmGtxQNi8ABs8s/ReYUO0lY2osLg9hBnCNMiZ9E6KpaEKm9nqIt7nR/iDxGSu2O8jiDHwJyDgciV49fvaOq1rRT5yc9tvdGrjvR1RjG48TpbEHQ/3IRLrZJxXcT15rpErgtlQ2KtIjfdWAEvsHo4eYXnNeg6raKlWYYXd3jkIxNIzB5r0O1vwtLjoASfBeX3PeDgXGqO45znNIM4ZJOY2CDKnRs8ONtsOPbUfgYXSARicdSB03PFaGk4AQEFZVBAIII1BG6nZalmUqZslHkEXVFz8ZUTWlc/EROZPjRfxKC0VFAKqiqPJVcgXAzN/VyDyWStloBJBXpFexNqCCENf2fog4iDlsDryTY5EuzPPC29HnvSPL7qSHb+69KZdFnqMLX2ZtMTEtPeB2M/eQsRedldZqz6TiHAHJ0RLTBaYA4EeKbGaYrJhlBWwfSpu6+f0RWxUTP0/JXDajRsPUdVdstcT3R9vv6hHbE0g5Ts7oGR9PqkuWB5AOJ2fDTwSV7/YOj1ttoIHeHi3P0T/zLTk1wJ4b+SipuXYaAdEdCrKt92CnaKRpVBIdkOIOxC8p7Qfw7fRmq2qCxsElocHtG5wznGusr1e8iQyWnMEEKrZ7SKjfQhGo6K5bMlYLM5tJrXVDUyEOOp8d104NB72Y4FWLXQ/lXYf/AMHHuHZjj+h3AT8p8OEwWkSFjyKmdTDk5R7B1cMBiYH5qoLQ+Bt1XFrVUvnKT7oU0ypJxZ26rlP5/ZV69TKJUFoD9oPp6Ie8PPDzV8QXMsvrbBc2ZpJ7up8hvM7Kg4uxBsiSCeQAiSSiFCuxmFgcXOcRJDR6A6DmR4K+IDmy+ygGwQ34jtQ5xwskf0zm9emXS8uotcYlzQTGkkbTssjZ+z+MTjInXQuPUlbWwUwKYaNBln0RRQmc7Mr2tpuLT3ctdJEZZxx1XmdeoWFwZAa7WOuh3BXst8WBrwc4458o8l5det20mugVWnkJcRoQPVOj+hQCpV+6RlEnx1yJOi0XZmmcQcGmR/SM55Ia+zMfGAkEQA14jF/tOm2/FaDs1dxa6XtI7wOU5GJHXWIVvoh6Pd7SNY0RRqF3aARk2BHuZIRCpVDRmlrRZl/4iW9zLP8ACZ89WWjOMt81kbppODQ2oATG4GfWN0V7d2guqUzEsaCDxE8IXNkLSAsuWVs6XjR4xsmstFrflAAOwEK18LNcNYpWPSTRZ2xikDEzSpWhXRTZwWKNwU1R2SF2quT3W6lSik7L9O0MbqQNY4noN0Ke99R7oEDE1zR/tzz6xKL2ayjCMQBjSQo3iDOGD1hvkiX9CUdndoM4Bp+o+GnqsP21fNckbBrf+oAPrK09ptmsGTudNOHALHdobSHHCM4TMe5CfJklDiCHVOQPl6cdUWuwuJGGB/x0Q+x0+IynjBCK0q7m5U2Cf6ifaNFqo5tmnosYGjFGLfMD0JSQNgqkZvHmfoQkroo9jdi2yHqqzqkblSutLeajdXadk5CGJ3eCEVX/AAnz+knNEDUjJQVKYqAg9ES0A9k1QNqNLXAOa4QQcwQVlbysT7PuXUdnHNzOTju3/V58UYsNUtJY7UeyIyHCCgyYlJUxuHM4O0YCuJVZtMSjV93G6lL6IJZqae7ebOX+ny4IAbUCMtfzVYJY5QdM6sMkcitE1UNQ+0NA0XTnjcqhaLSdipFWDKkCrday2sAByPitB2eufHXaTnnKzNmpGpaAAJgz+ea9Q7N2Y03tJ3yy0WyONNWYcmRp0a6y2YNCrWi8fhuJiW8PGFYtD+71QG8XiTnkFnyz49DsGPl2Wr5D7RTimYxZTy3CwV9dnX0GiATPjGeh/N16rYKbTSZGeQz9/VNarOCM0yLa2xMq6R4jWuquMJLHZ6ZHLXJHuyptDThEuYIkO1blstubqh5cKjhrlrqZlWWUKdKXOcBlwj8KJyRVP9EdhvNoZiIIGhyOoyEKS2WzLGchEgHYcSh9S9mF+BrRhG538FTvN7qrmtB7uriPQLLPJejXjwe2K7rOX03GoJxkmDp4cFFQsGgGQ26bIpVeGM5R+yz9Cla31nDEW0w52GAB3QTEeHFXjgpLbCyzcejS2e4nuEtqN/5T7hVLZYatLN7DH9Qzb5jTxRmytIaJ2Ru7jLeqY8MH0Jj5M13swTbQFI21jij3aO4mwalIQcy5o0PMDYrLspclmnBwdM1wyqatFp1fFoovh7qWmF05CGmRGq7+oqCu4ASSfFd1ih9d06qIJso3hau6SFkariXYgZ2/PRaK+h3cgsa6uWmDp7rRiMWcMUKmHSI4EbKxRqhzg2SDpPHlMSgVK0AnUnkSi12WvvjLLLbPXY7J7ZnSPQ7BYj8Nvy6bpLU3ZZqbqVMgZFrTqdwkjVANsuPA2Veo7krNZ42VU801CWRu9U1KoHTs4aj69F24KC00i4S3Ko35TseLTyP7q0CxrbTBIdvoVJRcuKFcVWYhkcwQdWuGoPNKgUX8K92WjmFlO0fZvGTVowHfqboHc+RWraq94WptJpc48gNyeA5oHFS0xkZuLtHjtvqlri1wLXAwQdZVepVyhbW3WejaDjq0wXHQiQWjYBwOax9ru/BaRRBMOIIO+E6/UJMsLj0aoeQp9hHsldsl1UjUgDw1P08FurIzC7llH1VGzWXCzC0RAgD2QW03xVqwAAxoOgzJg7nwWlLjGjFKXKVm+tLSGEzw9wg74LtUT+PjoYjuyfSUAfXkZagwVzPIWzpeM9MM0rRgbDTHT6q4y+GxFTI8R9llW2kjXyCnovxZnQJSyNDnijLs0VqvNjRIz9PzRZ+1l1Z+Jxy2A0HRR1rbJgBT2cnePzmhnkbChijEj/lmtzd6qvbLz+G2GsknJo0n7BEHAanP82UTabCcREnQKkw2cWEuc2XjwHHxWgsNlDQFSsdjcTLoGhA35SirWQMyn41RlzzTdI5aZKM2Yw0dUJa1X7O/KFogZZFyv3hkc/qsVb6GB5ygEnLgeC077QNOCw3b68nUqlNzSCCWlzdy0S13X5gfBVkjyQzDJxkXEziqlltrXtD2GWkSIVnFKxnQOHqlaWBXXlDbS9AXZStFMO18llL3u7v5Cd9MvNaSo9Z+8HF51gZ+nH1TcbaYnLTQIoWLG/CRlmJ5wf2Ru77uc3A9ubZAI1iN0MsF4Mp1S2Jad+DhpK2nZm1sY4zm2S4D29lobfszJL0elXNUDKFNvBoCSr2CoPht5ifPP6pLQlozt7LZ/P7KJ0jTMcNx0UzmgqNwP5r+6YhNHM7jMLlMdZGu/PqPqkCDp4j82V0VYLtr/gVRWH+W+BUHA6Nf9CrtaoGuB/S7fgdp5H81XdamHAtcJBEQqV2jDNnfmAJYT+pnDq3Ty4olsF6LNW8Gt3k8B+ZLMXnWqPfL9Nm7Ry5orUsnw3Rtsmr0gRmrVIp2wVSYCNFDSsDX2htTem1w/wC5EeWE+auBoaYKp223w0hgILpz4AZT11Regd2Pel7aspa5gu4cm8+aGWWzyu7JREK3ZxBQdh9Bmhav/Ha3cEg9FSZSgkzDTChoZOedRIHpn7rmo6WwD4aH91zfIf2Z0/Gj9USmuNNVHXtAya1C6rcJ1P59FC+2gDIyVmo13QYp1g3X6KN17CYbJ8YCr9k74ph72VqYdjghxbMf6eQ3Re0XPQe7ExuE8tD4aeSJwS7KTb6OrA51UgAT00HUrR2GwBmubuPDoqV2QwYQIRiiD5+idjhFbMuXJJ6YmNAJyz1TuCkLcstdlTtlRwAI45o3oXFcnRYapmOhDWW9oOHPxH1Vt1SBKKLRU4NPY9peASdz7Lz7+IlM4qVUfKJaf+S17yXlBO2tlxWZ3Fve8lfKyRVMyHZWo6m0tmW4iPXLzWroVZWTuGCw9SfVG7PW0Pmsk/yZvivqgrVeh9bNdVHpBkoQqB1Sks1b7veZl0NnzErZW5kMJ0gLG2+98ZwUxOvsjjyvQnJVbLFjutjXYXgHl4H9lZuuxltfDPdxgA/6Zn2QBtrewtDych6D9j6L0TsbcodSbXqZuqd4DYA6eJ+q0Ri2Z5SS2aJlWRMJ0Tp2SAAktJmLMJLpMUQshe0KCpTOoyPH7hWnBROBCtMFoja6doO4+o5KGvSkg7jMH3Ckdx/snBxDL+x4IiisamLuO+b9J4xqOqrPbqCpbXSmHDURPhoeo+4TWk4mh46O68UQIFtPeB/qb6oVTEsk7Yh/9H9kRtNTC881SdALjtOLx0+gUsojsTtQpapgyqL6ha8Hj+BTWup3D0VBBG6RLcR3kqO3kba8z9VLYmlrANQAMjHBc2gNiYMrjZJXKztY1UaBEw9j6rcVMOlwB1G3UTEjdaiu+x2pohrXDcAfL03agQs1W0FzKYkMALicgJ0HM5FALdZqtGuwQ5h4jQjhOhRRtqi20tmrZ2eFOXUcxwOo6FWLFacJGJvIzqFJct7ZYXCDx2PVELXSZUMaO4jX91bbSqQFJu4j1aoyI8Cr1jtOWZg+6z1Sq6g7/EbNM/qHui9NzXAFpkHQhCri7RcoqaphykVVtVDUjQ6j6hU6Vct5q2LWHbrRGakZZQlBg19KU1kJzYTpmF1aKsVAOPD3XNoEEOGyS1xkam/kgEGthCr/ABio1BxaR6IjTdiEjdDr2zaW8U+9GWK2eYXBXLSWnifPdaWmOGhQC8LL8Oq6P9w+qK3ba5ABWfIt2b8b1QTpnFCvU2KrYXCSOauhpO6FBlS9sqbpIggrCttTBVzA0Mf2RrtdanYxRBIGRcSNZ/pO/DzWYtpYZFNpk/LOsTmcW6bCHtmXJLdIJXXZP5y1U6ZHdHefH9A1HicI8V6/QswgZRsAMsllv4d3GKVH4jvnqw4ngwfI33Pitq1q2QVIxzdsTK5AiCUl1hSRAFgtXBSSVgDLhzgEklZTK1SoDpr0VKq5zHYx8v6xy2cOY9QkkmoS2T1XgQdiqdSqG1hTOlRjiOrCJ9HDySSUogBvpuE9D6FCvjd7XY+4SSVFkVqMtMbe/NJlTEGDic/DNJJBkdRY3Erkg8xwgDooa8g5u8h906S477OwuijSvSpZ3mozQxjaTkY311WgsFvo2tgkYgdZGhSSRp6J7Oqtw4ZwGRwP0KHst5ouw1BkD4jy1CSSJ7dCulaNA1zajdJBG41HRR0rOGZN04cEkkI07cQkGghJJCi5LQxpxolWd3SkkrAQ13Vf8PxcPVc16c5lJJaI/ijNL8mY3tRSAcwxuQhVA4SkklyNOPoK0KxGas2q8iwCNSkklsY3ozd7WjGCXEk7cs/2Kh7LXYK9VgJ+Yz0aAXO8YBSSWiHVGWT22ew02im0ADgABpwA6BWcUa9EklsMZ18VOkkqIf/Z"], ["location", "Brooklyn"], ["age", 42], ["description", "We are a Fun lovingg couple with no children looking to fill a missing piece in our puzzle. Low mantainence Preferred!, Hypoallergenic a must!"], ["created_at", "2019-06-04 19:46:31.003227"], ["updated_at", "2019-06-04 19:46:31.003227"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Kevin"], ["email", "KevMaster212@fakemail.com"], ["phone_number", "718-900-3000"], ["photo", "https://files.insidify.com/uploads/discovery/happy-black-man.png"], ["location", "Brooklyn"], ["age", 37], ["description", "Single Dad with 7 year old son, Looking for the best kitty for him to bond with!"], ["created_at", "2019-06-04 19:46:31.013659"], ["updated_at", "2019-06-04 19:46:31.013659"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mOwner Create (0.7ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Charles"], ["email", "KittyMan44@fakemail.com"], ["phone_number", "917-213-0213"], ["photo", "https://i.dailymail.co.uk/i/pix/2014/04/16/article-2606478-1D26D5FA00000578-317_634x424.jpg"], ["location", "Queens"], ["age", 41], ["description", "Cat lover at heart, If It was up to me Id have a santuary full of them!... Looking to add another furry feline to mix."], ["created_at", "2019-06-04 19:46:31.024382"], ["updated_at", "2019-06-04 19:46:31.024382"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Suzanne"], ["email", "vetLA@fakemail.com"], ["phone_number", "770-876-2346"], ["photo", "https://blogdottwomenandatruckdotcom.files.wordpress.com/2015/07/dr.jpg"], ["location", "Queens"], ["age", 45], ["description", "My profession surrounds me around animals every day, Now looking for my own to love and shelter."], ["created_at", "2019-06-04 19:46:31.033498"], ["updated_at", "2019-06-04 19:46:31.033498"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Iyanna"], ["email", "teacherByday@fakemail.com"], ["phone_number", "425-228-2876"], ["photo", "https://www.jefferson.kyschools.us/sites/default/files/Math%20Blk%20Female%20tchr%20at%20board.jpg"], ["location", "Long Island"], ["age", 45], ["description", "Teacher by day and lonely at night. Would love to have a furry friend waiting at home for me!"], ["created_at", "2019-06-04 19:46:31.038795"], ["updated_at", "2019-06-04 19:46:31.038795"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Ethel"], ["email", "granniesWithFannies@fakemail.com"], ["phone_number", "347-445-0098"], ["photo", ""], ["location", "Long Island"], ["age", 55], ["description", "Widowed and in need of some company. After my husband passed I havent had to care for anyone. I miss being depended upon...Looking for my new best friend."], ["created_at", "2019-06-04 19:46:31.046004"], ["updated_at", "2019-06-04 19:46:31.046004"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sadia"], ["email", "freshmanOfASU@fakemail.com"], ["phone_number", "646-872-1123"], ["photo", "https://collegelifemadeeasy.com/wp-content/uploads/2017/11/r.jpg"], ["location", "Bronx"], ["age", 19], ["description", "Just graduated High school and off to college in a few weeks, Currently looking for my new dorm pet to take along the ride."], ["created_at", "2019-06-04 19:46:31.050385"], ["updated_at", "2019-06-04 19:46:31.050385"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sole"], ["email", "soul2soul@fakemail.com"], ["phone_number", "646-887-9987"], ["photo", "https://www.stylevore.com/wp-content/uploads/2018/09/39401512_2063246623708010_8403980869068390400_n-700x875.jpg"], ["location", "Bronx"], ["age", 28], ["description", "Ive dealt with depression for years in college, I was told that I was Crazy and lots of people never understood me. So I want to start building a bond with a furry buddy to help boost my confidence to speak to others."], ["created_at", "2019-06-04 19:46:31.054886"], ["updated_at", "2019-06-04 19:46:31.054886"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (212.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pets_adoption_api_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (211.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pets_adoption_api_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (457.5ms)[0m  [1m[35mCREATE DATABASE "pets_adoption_api_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (511.4ms)[0m  [1m[35mCREATE DATABASE "pets_adoption_api_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "matches" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (17.4ms)[0m  [1m[35mCREATE TABLE "matches" ("id" bigserial primary key, "pet_id" bigint, "owner_id" bigint, "date_joined" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_owner_id" ON "matches"  ("owner_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_pet_id" ON "matches"  ("pet_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "owners" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "owners" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone_number" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "pets" ("id" bigserial primary key, "name" character varying, "breed" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190604143005)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190604142402),
+(20190604142639);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 19:47:30.506732"], ["updated_at", "2019-06-04 19:47:30.506732"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "matches" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE "matches" ("id" bigserial primary key, "pet_id" bigint, "owner_id" bigint, "date_joined" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_owner_id" ON "matches"  ("owner_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_pet_id" ON "matches"  ("pet_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "owners" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "owners" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone_number" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "pets" ("id" bigserial primary key, "name" character varying, "breed" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (5.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190604143005)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190604142402),
+(20190604142639);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 19:47:30.653813"], ["updated_at", "2019-06-04 19:47:30.653813"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-06-04 19:47:30.663474"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPet Create (0.9ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "SnowFlake"], ["breed", "American Eskimo"], ["photo", "https://i.etsystatic.com/6017700/r/il/cc00bc/1440852274/il_794xN.1440852274_zwy2.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "Neither shy nor aggressive, Eskies are always alert and friendly, though a bit conservative when making new friends."], ["created_at", "2019-06-04 19:47:30.748293"], ["updated_at", "2019-06-04 19:47:30.748293"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Piper"], ["breed", "Australian Cattle"], ["photo", "https://i.pinimg.com/736x/3d/60/e9/3d60e948872b0cf4a3df756278750c61--blue-heelers-australian-cattle-dog.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "They hava a natural affinity for obedience and enjoys playtime"], ["created_at", "2019-06-04 19:47:30.767443"], ["updated_at", "2019-06-04 19:47:30.767443"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Brownie"], ["breed", "Beagle"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg"], ["location", "Queens"], ["age", 3], ["description", "Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and—thanks to its pleading expression—cute."], ["created_at", "2019-06-04 19:47:30.770919"], ["updated_at", "2019-06-04 19:47:30.770919"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Spirit"], ["breed", "Cardigan Welsh Corgi"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Cardigan-Welsh-Corgi-1.jpg"], ["location", "Queens"], ["age", 3], ["description", "Cardis are trainable, faithful, and vigilant guardians with a “big dog” bark."], ["created_at", "2019-06-04 19:47:30.776746"], ["updated_at", "2019-06-04 19:47:30.776746"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Silky"], ["breed", "Afghan Hound"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/14145006/Afghan-Hound.86820153.jpg"], ["location", "New York"], ["age", 2], ["description", "Afghans are independent, dignified, and aloof in general, but they are affectionate and extremely loyal to humans they have bonded with."], ["created_at", "2019-06-04 19:47:30.784679"], ["updated_at", "2019-06-04 19:47:30.784679"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "WilmsFord"], ["breed", "Cesky Terrier"], ["photo", "https://vetstreet.brightspotcdn.com/dims4/default/e6a995a/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F04%2Fd6%2F5bd898f44eb08d58ecf40becffbd%2Fcesky-terrier-1.jpg"], ["location", "New York"], ["age", 2], ["description", "The Cesky Terrier, national dog of the Czech Republic, is a clever and adventurous playmate for kids and an eager walking buddy for the folks. "], ["created_at", "2019-06-04 19:47:30.790468"], ["updated_at", "2019-06-04 19:47:30.790468"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPet Create (0.8ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "JigglyPuff"], ["breed", "Coton de Tulear"], ["photo", "https://images1.americanlisted.com/nlarge/coton-de-tulear-puppy-for-sale-adoption-rescue-americanlisted_114662633.jpg"], ["location", "Long Island"], ["age", 1], ["description", "The Coton de Tulear, “Royal Dog of Madagascar,” is a bright, happy-go-lucky companion dog whose favorite activities include clowning, cavorting, and following their special human around the house."], ["created_at", "2019-06-04 19:47:30.798194"], ["updated_at", "2019-06-04 19:47:30.798194"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPet Create (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Draco"], ["breed", "Norrbottenspets"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Norrbottenspets-2.jpg"], ["location", "Long Island"], ["age", 1], ["description", "They are a small-sized hunting dog of Spitz-type, which was thought to be extinct but survived as a farm and hunting dog in the Northern parts of Sweden and Finland."], ["created_at", "2019-06-04 19:47:30.804264"], ["updated_at", "2019-06-04 19:47:30.804264"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPet Create (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Pixxie"], ["breed", "Lhasa Apso"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/09130555/Lhasa-Apso.jpg"], ["location", "Bronx"], ["age", 2], ["description", "Smart,confident, and complex, Lhasas are family comedians but regally aloof with strangers."], ["created_at", "2019-06-04 19:47:30.810134"], ["updated_at", "2019-06-04 19:47:30.810134"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPet Create (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Chanel"], ["breed", "StabyHoun"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/26173552/Stabyhoun.30135865.jpg"], ["location", "Bronx"], ["age", 3], ["description", "Although occasionally somewhat willful by nature, Stabyhouns are obedient, gentle, and patient dogs, who are deeply fond of their family, wanting to please their owners."], ["created_at", "2019-06-04 19:47:30.814182"], ["updated_at", "2019-06-04 19:47:30.814182"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mary"], ["email", "Mary&ThePussyCats@fakemail.com"], ["phone_number", "212-336-0087"], ["photo", "https://d2ck0sxsjau14o.cloudfront.net/wp-content/uploads/2018/10/young-attractive-woman.jpg"], ["location", "New York"], ["age", 36], ["description", " Mom of 3 with the love and Home for a lil puppy. I have have dogs in the past and is currently Searching for my fury baby!"], ["created_at", "2019-06-04 19:47:30.847990"], ["updated_at", "2019-06-04 19:47:30.847990"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Steph"], ["email", "StephCurryWitThePot@fakemail.com"], ["phone_number", "178-002-3367"], ["photo", "https://cdn.pixabay.com/photo/2017/08/07/00/33/people-2597995_960_720.jpg"], ["location", "New York"], ["age", 28], ["description", "Looking for a show stopper, Full with spunk and is easy to train. Currently have 2 small dogs in need of a bestie."], ["created_at", "2019-06-04 19:47:30.852682"], ["updated_at", "2019-06-04 19:47:30.852682"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mOwner Create (1.3ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mark & Beth"], ["email", "DogLovers200@fakemail.com"], ["phone_number", "876-209-9981"], ["photo", "data:image/jpeg;base64,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"], ["location", "Brooklyn"], ["age", 42], ["description", "We are a Fun lovingg couple with no children looking to fill a missing piece in our puzzle. Low mantainence Preferred!, Hypoallergenic a must!"], ["created_at", "2019-06-04 19:47:30.857308"], ["updated_at", "2019-06-04 19:47:30.857308"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Kevin"], ["email", "KevMaster212@fakemail.com"], ["phone_number", "718-900-3000"], ["photo", "https://files.insidify.com/uploads/discovery/happy-black-man.png"], ["location", "Brooklyn"], ["age", 37], ["description", "Single Dad with 7 year old son, Looking for the best kitty for him to bond with!"], ["created_at", "2019-06-04 19:47:30.862936"], ["updated_at", "2019-06-04 19:47:30.862936"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Charles"], ["email", "KittyMan44@fakemail.com"], ["phone_number", "917-213-0213"], ["photo", "https://i.dailymail.co.uk/i/pix/2014/04/16/article-2606478-1D26D5FA00000578-317_634x424.jpg"], ["location", "Queens"], ["age", 41], ["description", "Cat lover at heart, If It was up to me Id have a santuary full of them!... Looking to add another furry feline to mix."], ["created_at", "2019-06-04 19:47:30.867426"], ["updated_at", "2019-06-04 19:47:30.867426"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Suzanne"], ["email", "vetLA@fakemail.com"], ["phone_number", "770-876-2346"], ["photo", "https://blogdottwomenandatruckdotcom.files.wordpress.com/2015/07/dr.jpg"], ["location", "Queens"], ["age", 45], ["description", "My profession surrounds me around animals every day, Now looking for my own to love and shelter."], ["created_at", "2019-06-04 19:47:30.872172"], ["updated_at", "2019-06-04 19:47:30.872172"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Iyanna"], ["email", "teacherByday@fakemail.com"], ["phone_number", "425-228-2876"], ["photo", "https://www.jefferson.kyschools.us/sites/default/files/Math%20Blk%20Female%20tchr%20at%20board.jpg"], ["location", "Long Island"], ["age", 45], ["description", "Teacher by day and lonely at night. Would love to have a furry friend waiting at home for me!"], ["created_at", "2019-06-04 19:47:30.876719"], ["updated_at", "2019-06-04 19:47:30.876719"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Ethel"], ["email", "granniesWithFannies@fakemail.com"], ["phone_number", "347-445-0098"], ["photo", ""], ["location", "Long Island"], ["age", 55], ["description", "Widowed and in need of some company. After my husband passed I havent had to care for anyone. I miss being depended upon...Looking for my new best friend."], ["created_at", "2019-06-04 19:47:30.881300"], ["updated_at", "2019-06-04 19:47:30.881300"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sadia"], ["email", "freshmanOfASU@fakemail.com"], ["phone_number", "646-872-1123"], ["photo", "https://collegelifemadeeasy.com/wp-content/uploads/2017/11/r.jpg"], ["location", "Bronx"], ["age", 19], ["description", "Just graduated High school and off to college in a few weeks, Currently looking for my new dorm pet to take along the ride."], ["created_at", "2019-06-04 19:47:30.885935"], ["updated_at", "2019-06-04 19:47:30.885935"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sole"], ["email", "soul2soul@fakemail.com"], ["phone_number", "646-887-9987"], ["photo", "https://www.stylevore.com/wp-content/uploads/2018/09/39401512_2063246623708010_8403980869068390400_n-700x875.jpg"], ["location", "Bronx"], ["age", 28], ["description", "Ive dealt with depression for years in college, I was told that I was Crazy and lots of people never understood me. So I want to start building a bond with a furry buddy to help boost my confidence to speak to others."], ["created_at", "2019-06-04 19:47:30.890704"], ["updated_at", "2019-06-04 19:47:30.890704"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (203.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pets_adoption_api_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (206.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "pets_adoption_api_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (533.4ms)[0m  [1m[35mCREATE DATABASE "pets_adoption_api_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (480.3ms)[0m  [1m[35mCREATE DATABASE "pets_adoption_api_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "matches" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE "matches" ("id" bigserial primary key, "pet_id" bigint, "owner_id" bigint, "date_joined" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_owner_id" ON "matches"  ("owner_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_pet_id" ON "matches"  ("pet_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "owners" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "owners" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone_number" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (12.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE "pets" ("id" bigserial primary key, "name" character varying, "breed" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190604143005)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190604142402),
+(20190604142639);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (10.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 19:53:41.540790"], ["updated_at", "2019-06-04 19:53:41.540790"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "matches" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (25.7ms)[0m  [1m[35mCREATE TABLE "matches" ("id" bigserial primary key, "pet_id" bigint, "owner_id" bigint, "date_joined" date, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_owner_id" ON "matches"  ("owner_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_pet_id" ON "matches"  ("pet_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "owners" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (12.7ms)[0m  [1m[35mCREATE TABLE "owners" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone_number" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "pets" CASCADE[0m
+  ↳ db/schema.rb:40
+  [1m[35m (15.6ms)[0m  [1m[35mCREATE TABLE "pets" ("id" bigserial primary key, "name" character varying, "breed" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:40
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20190604143005)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20190604142402),
+(20190604142639);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-06-04 19:53:41.720515"], ["updated_at", "2019-06-04 19:53:41.720515"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-06-04 19:53:41.726411"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPet Create (0.9ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "SnowFlake"], ["breed", "American Eskimo"], ["photo", "https://i.etsystatic.com/6017700/r/il/cc00bc/1440852274/il_794xN.1440852274_zwy2.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "Neither shy nor aggressive, Eskies are always alert and friendly, though a bit conservative when making new friends."], ["created_at", "2019-06-04 19:53:41.799604"], ["updated_at", "2019-06-04 19:53:41.799604"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Piper"], ["breed", "Australian Cattle"], ["photo", "https://i.pinimg.com/736x/3d/60/e9/3d60e948872b0cf4a3df756278750c61--blue-heelers-australian-cattle-dog.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "They hava a natural affinity for obedience and enjoys playtime"], ["created_at", "2019-06-04 19:53:41.816694"], ["updated_at", "2019-06-04 19:53:41.816694"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Brownie"], ["breed", "Beagle"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg"], ["location", "Queens"], ["age", 3], ["description", "Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and—thanks to its pleading expression—cute."], ["created_at", "2019-06-04 19:53:41.821050"], ["updated_at", "2019-06-04 19:53:41.821050"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Spirit"], ["breed", "Cardigan Welsh Corgi"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Cardigan-Welsh-Corgi-1.jpg"], ["location", "Queens"], ["age", 3], ["description", "Cardis are trainable, faithful, and vigilant guardians with a “big dog” bark."], ["created_at", "2019-06-04 19:53:41.825557"], ["updated_at", "2019-06-04 19:53:41.825557"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Silky"], ["breed", "Afghan Hound"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/14145006/Afghan-Hound.86820153.jpg"], ["location", "New York"], ["age", 2], ["description", "Afghans are independent, dignified, and aloof in general, but they are affectionate and extremely loyal to humans they have bonded with."], ["created_at", "2019-06-04 19:53:41.830235"], ["updated_at", "2019-06-04 19:53:41.830235"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "WilmsFord"], ["breed", "Cesky Terrier"], ["photo", "https://vetstreet.brightspotcdn.com/dims4/default/e6a995a/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F04%2Fd6%2F5bd898f44eb08d58ecf40becffbd%2Fcesky-terrier-1.jpg"], ["location", "New York"], ["age", 2], ["description", "The Cesky Terrier, national dog of the Czech Republic, is a clever and adventurous playmate for kids and an eager walking buddy for the folks. "], ["created_at", "2019-06-04 19:53:41.835125"], ["updated_at", "2019-06-04 19:53:41.835125"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "JigglyPuff"], ["breed", "Coton de Tulear"], ["photo", "https://images1.americanlisted.com/nlarge/coton-de-tulear-puppy-for-sale-adoption-rescue-americanlisted_114662633.jpg"], ["location", "Long Island"], ["age", 1], ["description", "The Coton de Tulear, “Royal Dog of Madagascar,” is a bright, happy-go-lucky companion dog whose favorite activities include clowning, cavorting, and following their special human around the house."], ["created_at", "2019-06-04 19:53:41.840799"], ["updated_at", "2019-06-04 19:53:41.840799"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Draco"], ["breed", "Norrbottenspets"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Norrbottenspets-2.jpg"], ["location", "Long Island"], ["age", 1], ["description", "They are a small-sized hunting dog of Spitz-type, which was thought to be extinct but survived as a farm and hunting dog in the Northern parts of Sweden and Finland."], ["created_at", "2019-06-04 19:53:41.845641"], ["updated_at", "2019-06-04 19:53:41.845641"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Pixxie"], ["breed", "Lhasa Apso"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/09130555/Lhasa-Apso.jpg"], ["location", "Bronx"], ["age", 2], ["description", "Smart,confident, and complex, Lhasas are family comedians but regally aloof with strangers."], ["created_at", "2019-06-04 19:53:41.850885"], ["updated_at", "2019-06-04 19:53:41.850885"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Chanel"], ["breed", "StabyHoun"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/26173552/Stabyhoun.30135865.jpg"], ["location", "Bronx"], ["age", 3], ["description", "Although occasionally somewhat willful by nature, Stabyhouns are obedient, gentle, and patient dogs, who are deeply fond of their family, wanting to please their owners."], ["created_at", "2019-06-04 19:53:41.855602"], ["updated_at", "2019-06-04 19:53:41.855602"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mary"], ["email", "Mary&ThePussyCats@fakemail.com"], ["phone_number", "212-336-0087"], ["photo", "https://d2ck0sxsjau14o.cloudfront.net/wp-content/uploads/2018/10/young-attractive-woman.jpg"], ["location", "New York"], ["age", 36], ["description", " Mom of 3 with the love and Home for a lil puppy. I have have dogs in the past and is currently Searching for my fury baby!"], ["created_at", "2019-06-04 19:53:41.877183"], ["updated_at", "2019-06-04 19:53:41.877183"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Steph"], ["email", "StephCurryWitThePot@fakemail.com"], ["phone_number", "178-002-3367"], ["photo", "https://cdn.pixabay.com/photo/2017/08/07/00/33/people-2597995_960_720.jpg"], ["location", "New York"], ["age", 28], ["description", "Looking for a show stopper, Full with spunk and is easy to train. Currently have 2 small dogs in need of a bestie."], ["created_at", "2019-06-04 19:53:41.886422"], ["updated_at", "2019-06-04 19:53:41.886422"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mOwner Create (2.1ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mark & Beth"], ["email", "DogLovers200@fakemail.com"], ["phone_number", "876-209-9981"], ["photo", "data:image/jpeg;base64,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"], ["location", "Brooklyn"], ["age", 42], ["description", "We are a Fun lovingg couple with no children looking to fill a missing piece in our puzzle. Low mantainence Preferred!, Hypoallergenic a must!"], ["created_at", "2019-06-04 19:53:41.894687"], ["updated_at", "2019-06-04 19:53:41.894687"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Kevin"], ["email", "KevMaster212@fakemail.com"], ["phone_number", "718-900-3000"], ["photo", "https://files.insidify.com/uploads/discovery/happy-black-man.png"], ["location", "Brooklyn"], ["age", 37], ["description", "Single Dad with 7 year old son, Looking for the best kitty for him to bond with!"], ["created_at", "2019-06-04 19:53:41.903134"], ["updated_at", "2019-06-04 19:53:41.903134"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Charles"], ["email", "KittyMan44@fakemail.com"], ["phone_number", "917-213-0213"], ["photo", "https://i.dailymail.co.uk/i/pix/2014/04/16/article-2606478-1D26D5FA00000578-317_634x424.jpg"], ["location", "Queens"], ["age", 41], ["description", "Cat lover at heart, If It was up to me Id have a santuary full of them!... Looking to add another furry feline to mix."], ["created_at", "2019-06-04 19:53:41.908839"], ["updated_at", "2019-06-04 19:53:41.908839"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Suzanne"], ["email", "vetLA@fakemail.com"], ["phone_number", "770-876-2346"], ["photo", "https://blogdottwomenandatruckdotcom.files.wordpress.com/2015/07/dr.jpg"], ["location", "Queens"], ["age", 45], ["description", "My profession surrounds me around animals every day, Now looking for my own to love and shelter."], ["created_at", "2019-06-04 19:53:41.914779"], ["updated_at", "2019-06-04 19:53:41.914779"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Iyanna"], ["email", "teacherByday@fakemail.com"], ["phone_number", "425-228-2876"], ["photo", "https://www.jefferson.kyschools.us/sites/default/files/Math%20Blk%20Female%20tchr%20at%20board.jpg"], ["location", "Long Island"], ["age", 45], ["description", "Teacher by day and lonely at night. Would love to have a furry friend waiting at home for me!"], ["created_at", "2019-06-04 19:53:41.920584"], ["updated_at", "2019-06-04 19:53:41.920584"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Ethel"], ["email", "granniesWithFannies@fakemail.com"], ["phone_number", "347-445-0098"], ["photo", ""], ["location", "Long Island"], ["age", 55], ["description", "Widowed and in need of some company. After my husband passed I havent had to care for anyone. I miss being depended upon...Looking for my new best friend."], ["created_at", "2019-06-04 19:53:41.926238"], ["updated_at", "2019-06-04 19:53:41.926238"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mOwner Create (0.7ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sadia"], ["email", "freshmanOfASU@fakemail.com"], ["phone_number", "646-872-1123"], ["photo", "https://collegelifemadeeasy.com/wp-content/uploads/2017/11/r.jpg"], ["location", "Bronx"], ["age", 19], ["description", "Just graduated High school and off to college in a few weeks, Currently looking for my new dorm pet to take along the ride."], ["created_at", "2019-06-04 19:53:41.932278"], ["updated_at", "2019-06-04 19:53:41.932278"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sole"], ["email", "soul2soul@fakemail.com"], ["phone_number", "646-887-9987"], ["photo", "https://www.stylevore.com/wp-content/uploads/2018/09/39401512_2063246623708010_8403980869068390400_n-700x875.jpg"], ["location", "Bronx"], ["age", 28], ["description", "Ive dealt with depression for years in college, I was told that I was Crazy and lots of people never understood me. So I want to start building a bond with a furry buddy to help boost my confidence to speak to others."], ["created_at", "2019-06-04 19:53:41.938650"], ["updated_at", "2019-06-04 19:53:41.938650"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mMatch Load (3.5ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "matches"[0m
+  [1m[36mMatch Load (3.2ms)[0m  [1m[34mSELECT "matches".* FROM "matches" INNER JOIN "owners" ON "owners"."id" = "matches"."owner_id" WHERE (owner.id = 1)[0m
+  [1m[36mMatch Load (0.7ms)[0m  [1m[34mSELECT  "matches".* FROM "matches" INNER JOIN "owners" ON "owners"."id" = "matches"."owner_id" WHERE (owner.id = 1) LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mMatch Load (0.6ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "matches"[0m
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPet Create (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "SnowFlake"], ["breed", "American Eskimo"], ["photo", "https://i.etsystatic.com/6017700/r/il/cc00bc/1440852274/il_794xN.1440852274_zwy2.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "Neither shy nor aggressive, Eskies are always alert and friendly, though a bit conservative when making new friends."], ["created_at", "2019-06-04 20:06:38.538616"], ["updated_at", "2019-06-04 20:06:38.538616"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Piper"], ["breed", "Australian Cattle"], ["photo", "https://i.pinimg.com/736x/3d/60/e9/3d60e948872b0cf4a3df756278750c61--blue-heelers-australian-cattle-dog.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "They hava a natural affinity for obedience and enjoys playtime"], ["created_at", "2019-06-04 20:06:38.544501"], ["updated_at", "2019-06-04 20:06:38.544501"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Brownie"], ["breed", "Beagle"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg"], ["location", "Queens"], ["age", 3], ["description", "Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and—thanks to its pleading expression—cute."], ["created_at", "2019-06-04 20:06:38.549491"], ["updated_at", "2019-06-04 20:06:38.549491"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mOwner Create (0.7ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mary"], ["email", "Mary&ThePussyCats@fakemail.com"], ["phone_number", "212-336-0087"], ["photo", "https://d2ck0sxsjau14o.cloudfront.net/wp-content/uploads/2018/10/young-attractive-woman.jpg"], ["location", "New York"], ["age", 36], ["description", " Mom of 3 with the love and Home for a lil puppy. I have have dogs in the past and is currently Searching for my fury baby!"], ["created_at", "2019-06-04 20:06:38.584547"], ["updated_at", "2019-06-04 20:06:38.584547"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Steph"], ["email", "StephCurryWitThePot@fakemail.com"], ["phone_number", "178-002-3367"], ["photo", "https://cdn.pixabay.com/photo/2017/08/07/00/33/people-2597995_960_720.jpg"], ["location", "New York"], ["age", 28], ["description", "Looking for a show stopper, Full with spunk and is easy to train. Currently have 2 small dogs in need of a bestie."], ["created_at", "2019-06-04 20:06:38.589941"], ["updated_at", "2019-06-04 20:06:38.589941"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPet Create (0.9ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "SnowFlake"], ["breed", "American Eskimo"], ["photo", "https://i.etsystatic.com/6017700/r/il/cc00bc/1440852274/il_794xN.1440852274_zwy2.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "Neither shy nor aggressive, Eskies are always alert and friendly, though a bit conservative when making new friends."], ["created_at", "2019-06-04 20:09:19.355521"], ["updated_at", "2019-06-04 20:09:19.355521"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Piper"], ["breed", "Australian Cattle"], ["photo", "https://i.pinimg.com/736x/3d/60/e9/3d60e948872b0cf4a3df756278750c61--blue-heelers-australian-cattle-dog.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "They hava a natural affinity for obedience and enjoys playtime"], ["created_at", "2019-06-04 20:09:19.361397"], ["updated_at", "2019-06-04 20:09:19.361397"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Brownie"], ["breed", "Beagle"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg"], ["location", "Queens"], ["age", 3], ["description", "Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and—thanks to its pleading expression—cute."], ["created_at", "2019-06-04 20:09:19.365784"], ["updated_at", "2019-06-04 20:09:19.365784"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mary"], ["email", "Mary&ThePussyCats@fakemail.com"], ["phone_number", "212-336-0087"], ["photo", "https://d2ck0sxsjau14o.cloudfront.net/wp-content/uploads/2018/10/young-attractive-woman.jpg"], ["location", "New York"], ["age", 36], ["description", " Mom of 3 with the love and Home for a lil puppy. I have have dogs in the past and is currently Searching for my fury baby!"], ["created_at", "2019-06-04 20:09:19.386290"], ["updated_at", "2019-06-04 20:09:19.386290"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Steph"], ["email", "StephCurryWitThePot@fakemail.com"], ["phone_number", "178-002-3367"], ["photo", "https://cdn.pixabay.com/photo/2017/08/07/00/33/people-2597995_960_720.jpg"], ["location", "New York"], ["age", 28], ["description", "Looking for a show stopper, Full with spunk and is easy to train. Currently have 2 small dogs in need of a bestie."], ["created_at", "2019-06-04 20:09:19.394649"], ["updated_at", "2019-06-04 20:09:19.394649"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mMatch Create (1.8ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 14], ["owner_id", 13], ["created_at", "2019-06-04 20:09:19.491873"], ["updated_at", "2019-06-04 20:09:19.491873"]]
+  ↳ db/seeds.rb:31
+  [1m[36mMatch Create (0.6ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 15], ["owner_id", 13], ["created_at", "2019-06-04 20:09:19.496692"], ["updated_at", "2019-06-04 20:09:19.496692"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (13.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mMatch Load (2.0ms)[0m  [1m[34mSELECT "matches".* FROM "matches"[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4649523208736753340)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateMatches (20190604143005)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (26.4ms)[0m  [1m[35mDROP TABLE "matches"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190604143005"]]
+  ↳ bin/rails:9
+  [1m[35m (12.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateOwners (20190604142639)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE "owners"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190604142639"]]
+  ↳ bin/rails:9
+  [1m[35m (17.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20190604142402)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mDROP TABLE "pets"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20190604142402"]]
+  ↳ bin/rails:9
+  [1m[35m (7.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4649523208736753340)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4649523208736753340)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20190604142402)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE "pets" ("id" bigserial primary key, "name" character varying, "breed" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190604142402_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190604142402"]]
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateOwners (20190604142639)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (16.5ms)[0m  [1m[35mCREATE TABLE "owners" ("id" bigserial primary key, "name" character varying, "email" character varying, "phone_number" character varying, "photo" character varying, "location" character varying, "age" integer, "description" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190604142639_create_owners.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190604142639"]]
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateMatches (20190604143005)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "matches" ("id" bigserial primary key, "pet_id" bigint, "owner_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20190604143005_create_matches.rb:3
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_pet_id" ON "matches"  ("pet_id")[0m
+  ↳ db/migrate/20190604143005_create_matches.rb:3
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE  INDEX  "index_matches_on_owner_id" ON "matches"  ("owner_id")[0m
+  ↳ db/migrate/20190604143005_create_matches.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190604143005"]]
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4649523208736753340)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPet Create (1.1ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "SnowFlake"], ["breed", "American Eskimo"], ["photo", "https://i.etsystatic.com/6017700/r/il/cc00bc/1440852274/il_794xN.1440852274_zwy2.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "Neither shy nor aggressive, Eskies are always alert and friendly, though a bit conservative when making new friends."], ["created_at", "2019-06-04 20:17:05.969289"], ["updated_at", "2019-06-04 20:17:05.969289"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Piper"], ["breed", "Australian Cattle"], ["photo", "https://i.pinimg.com/736x/3d/60/e9/3d60e948872b0cf4a3df756278750c61--blue-heelers-australian-cattle-dog.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "They hava a natural affinity for obedience and enjoys playtime"], ["created_at", "2019-06-04 20:17:05.974798"], ["updated_at", "2019-06-04 20:17:05.974798"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Brownie"], ["breed", "Beagle"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg"], ["location", "Queens"], ["age", 3], ["description", "Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and—thanks to its pleading expression—cute."], ["created_at", "2019-06-04 20:17:05.979123"], ["updated_at", "2019-06-04 20:17:05.979123"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mary"], ["email", "Mary&ThePussyCats@fakemail.com"], ["phone_number", "212-336-0087"], ["photo", "https://d2ck0sxsjau14o.cloudfront.net/wp-content/uploads/2018/10/young-attractive-woman.jpg"], ["location", "New York"], ["age", 36], ["description", " Mom of 3 with the love and Home for a lil puppy. I have have dogs in the past and is currently Searching for my fury baby!"], ["created_at", "2019-06-04 20:17:06.010264"], ["updated_at", "2019-06-04 20:17:06.010264"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mOwner Create (0.4ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Steph"], ["email", "StephCurryWitThePot@fakemail.com"], ["phone_number", "178-002-3367"], ["photo", "https://cdn.pixabay.com/photo/2017/08/07/00/33/people-2597995_960_720.jpg"], ["location", "New York"], ["age", 28], ["description", "Looking for a show stopper, Full with spunk and is easy to train. Currently have 2 small dogs in need of a bestie."], ["created_at", "2019-06-04 20:17:06.015100"], ["updated_at", "2019-06-04 20:17:06.015100"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mMatch Create (1.0ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 1], ["owner_id", 1], ["created_at", "2019-06-04 20:17:06.107753"], ["updated_at", "2019-06-04 20:17:06.107753"]]
+  ↳ db/seeds.rb:31
+  [1m[36mMatch Create (0.3ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 2], ["owner_id", 1], ["created_at", "2019-06-04 20:17:06.110342"], ["updated_at", "2019-06-04 20:17:06.110342"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:8
+  [1m[36mPet Create (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "SnowFlake"], ["breed", "American Eskimo"], ["photo", "https://i.etsystatic.com/6017700/r/il/cc00bc/1440852274/il_794xN.1440852274_zwy2.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "Neither shy nor aggressive, Eskies are always alert and friendly, though a bit conservative when making new friends."], ["created_at", "2019-06-04 20:18:48.783110"], ["updated_at", "2019-06-04 20:18:48.783110"]]
+  ↳ db/seeds.rb:8
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Piper"], ["breed", "Australian Cattle"], ["photo", "https://i.pinimg.com/736x/3d/60/e9/3d60e948872b0cf4a3df756278750c61--blue-heelers-australian-cattle-dog.jpg"], ["location", "Brooklyn"], ["age", 1], ["description", "They hava a natural affinity for obedience and enjoys playtime"], ["created_at", "2019-06-04 20:18:48.788518"], ["updated_at", "2019-06-04 20:18:48.788518"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Brownie"], ["breed", "Beagle"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/13000937/Beagle-On-White-07.jpg"], ["location", "Queens"], ["age", 3], ["description", "Not only is the Beagle an excellent hunting dog and loyal companion, it is also happy-go-lucky, funny, and—thanks to its pleading expression—cute."], ["created_at", "2019-06-04 20:18:48.793401"], ["updated_at", "2019-06-04 20:18:48.793401"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Spirit"], ["breed", "Cardigan Welsh Corgi"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Cardigan-Welsh-Corgi-1.jpg"], ["location", "Queens"], ["age", 3], ["description", "Cardis are trainable, faithful, and vigilant guardians with a “big dog” bark."], ["created_at", "2019-06-04 20:18:48.798233"], ["updated_at", "2019-06-04 20:18:48.798233"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Silky"], ["breed", "Afghan Hound"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/14145006/Afghan-Hound.86820153.jpg"], ["location", "New York"], ["age", 2], ["description", "Afghans are independent, dignified, and aloof in general, but they are affectionate and extremely loyal to humans they have bonded with."], ["created_at", "2019-06-04 20:18:48.803018"], ["updated_at", "2019-06-04 20:18:48.803018"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "WilmsFord"], ["breed", "Cesky Terrier"], ["photo", "https://vetstreet.brightspotcdn.com/dims4/default/e6a995a/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F04%2Fd6%2F5bd898f44eb08d58ecf40becffbd%2Fcesky-terrier-1.jpg"], ["location", "New York"], ["age", 2], ["description", "The Cesky Terrier, national dog of the Czech Republic, is a clever and adventurous playmate for kids and an eager walking buddy for the folks. "], ["created_at", "2019-06-04 20:18:48.807940"], ["updated_at", "2019-06-04 20:18:48.807940"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "JigglyPuff"], ["breed", "Coton de Tulear"], ["photo", "https://images1.americanlisted.com/nlarge/coton-de-tulear-puppy-for-sale-adoption-rescue-americanlisted_114662633.jpg"], ["location", "Long Island"], ["age", 1], ["description", "The Coton de Tulear, “Royal Dog of Madagascar,” is a bright, happy-go-lucky companion dog whose favorite activities include clowning, cavorting, and following their special human around the house."], ["created_at", "2019-06-04 20:18:48.813055"], ["updated_at", "2019-06-04 20:18:48.813055"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Draco"], ["breed", "Norrbottenspets"], ["photo", "https://www.dogbreedslist.info/uploads/allimg/dog-pictures/Norrbottenspets-2.jpg"], ["location", "Long Island"], ["age", 1], ["description", "They are a small-sized hunting dog of Spitz-type, which was thought to be extinct but survived as a farm and hunting dog in the Northern parts of Sweden and Finland."], ["created_at", "2019-06-04 20:18:48.817755"], ["updated_at", "2019-06-04 20:18:48.817755"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mPet Create (0.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Pixxie"], ["breed", "Lhasa Apso"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/09130555/Lhasa-Apso.jpg"], ["location", "Bronx"], ["age", 2], ["description", "Smart,confident, and complex, Lhasas are family comedians but regally aloof with strangers."], ["created_at", "2019-06-04 20:18:48.822631"], ["updated_at", "2019-06-04 20:18:48.822631"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mPet Create (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "breed", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "Chanel"], ["breed", "StabyHoun"], ["photo", "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/26173552/Stabyhoun.30135865.jpg"], ["location", "Bronx"], ["age", 3], ["description", "Although occasionally somewhat willful by nature, Stabyhouns are obedient, gentle, and patient dogs, who are deeply fond of their family, wanting to please their owners."], ["created_at", "2019-06-04 20:18:48.827364"], ["updated_at", "2019-06-04 20:18:48.827364"]]
+  ↳ db/seeds.rb:17
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mary"], ["email", "Mary&ThePussyCats@fakemail.com"], ["phone_number", "212-336-0087"], ["photo", "https://d2ck0sxsjau14o.cloudfront.net/wp-content/uploads/2018/10/young-attractive-woman.jpg"], ["location", "New York"], ["age", 36], ["description", " Mom of 3 with the love and Home for a lil puppy. I have have dogs in the past and is currently Searching for my fury baby!"], ["created_at", "2019-06-04 20:18:48.848765"], ["updated_at", "2019-06-04 20:18:48.848765"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Steph"], ["email", "StephCurryWitThePot@fakemail.com"], ["phone_number", "178-002-3367"], ["photo", "https://cdn.pixabay.com/photo/2017/08/07/00/33/people-2597995_960_720.jpg"], ["location", "New York"], ["age", 28], ["description", "Looking for a show stopper, Full with spunk and is easy to train. Currently have 2 small dogs in need of a bestie."], ["created_at", "2019-06-04 20:18:48.861433"], ["updated_at", "2019-06-04 20:18:48.861433"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mOwner Create (3.2ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Mark & Beth"], ["email", "DogLovers200@fakemail.com"], ["phone_number", "876-209-9981"], ["photo", "data:image/jpeg;base64,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"], ["location", "Brooklyn"], ["age", 42], ["description", "We are a Fun lovingg couple with no children looking to fill a missing piece in our puzzle. Low mantainence Preferred!, Hypoallergenic a must!"], ["created_at", "2019-06-04 20:18:48.868341"], ["updated_at", "2019-06-04 20:18:48.868341"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Kevin"], ["email", "KevMaster212@fakemail.com"], ["phone_number", "718-900-3000"], ["photo", "https://files.insidify.com/uploads/discovery/happy-black-man.png"], ["location", "Brooklyn"], ["age", 37], ["description", "Single Dad with 7 year old son, Looking for the best kitty for him to bond with!"], ["created_at", "2019-06-04 20:18:48.877488"], ["updated_at", "2019-06-04 20:18:48.877488"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Charles"], ["email", "KittyMan44@fakemail.com"], ["phone_number", "917-213-0213"], ["photo", "https://i.dailymail.co.uk/i/pix/2014/04/16/article-2606478-1D26D5FA00000578-317_634x424.jpg"], ["location", "Queens"], ["age", 41], ["description", "Cat lover at heart, If It was up to me Id have a santuary full of them!... Looking to add another furry feline to mix."], ["created_at", "2019-06-04 20:18:48.883759"], ["updated_at", "2019-06-04 20:18:48.883759"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Suzanne"], ["email", "vetLA@fakemail.com"], ["phone_number", "770-876-2346"], ["photo", "https://blogdottwomenandatruckdotcom.files.wordpress.com/2015/07/dr.jpg"], ["location", "Queens"], ["age", 45], ["description", "My profession surrounds me around animals every day, Now looking for my own to love and shelter."], ["created_at", "2019-06-04 20:18:48.889533"], ["updated_at", "2019-06-04 20:18:48.889533"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Iyanna"], ["email", "teacherByday@fakemail.com"], ["phone_number", "425-228-2876"], ["photo", "https://www.jefferson.kyschools.us/sites/default/files/Math%20Blk%20Female%20tchr%20at%20board.jpg"], ["location", "Long Island"], ["age", 45], ["description", "Teacher by day and lonely at night. Would love to have a furry friend waiting at home for me!"], ["created_at", "2019-06-04 20:18:48.895535"], ["updated_at", "2019-06-04 20:18:48.895535"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mOwner Create (0.5ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Ethel"], ["email", "granniesWithFannies@fakemail.com"], ["phone_number", "347-445-0098"], ["photo", ""], ["location", "Long Island"], ["age", 55], ["description", "Widowed and in need of some company. After my husband passed I havent had to care for anyone. I miss being depended upon...Looking for my new best friend."], ["created_at", "2019-06-04 20:18:48.901286"], ["updated_at", "2019-06-04 20:18:48.901286"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mOwner Create (0.7ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sadia"], ["email", "freshmanOfASU@fakemail.com"], ["phone_number", "646-872-1123"], ["photo", "https://collegelifemadeeasy.com/wp-content/uploads/2017/11/r.jpg"], ["location", "Bronx"], ["age", 19], ["description", "Just graduated High school and off to college in a few weeks, Currently looking for my new dorm pet to take along the ride."], ["created_at", "2019-06-04 20:18:48.906999"], ["updated_at", "2019-06-04 20:18:48.906999"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mOwner Create (0.6ms)[0m  [1m[32mINSERT INTO "owners" ("name", "email", "phone_number", "photo", "location", "age", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["name", "Sole"], ["email", "soul2soul@fakemail.com"], ["phone_number", "646-887-9987"], ["photo", "https://www.stylevore.com/wp-content/uploads/2018/09/39401512_2063246623708010_8403980869068390400_n-700x875.jpg"], ["location", "Bronx"], ["age", 28], ["description", "Ive dealt with depression for years in college, I was told that I was Crazy and lots of people never understood me. So I want to start building a bond with a furry buddy to help boost my confidence to speak to others."], ["created_at", "2019-06-04 20:18:48.913835"], ["updated_at", "2019-06-04 20:18:48.913835"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:31
+  [1m[36mMatch Create (0.9ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 4], ["owner_id", 3], ["created_at", "2019-06-04 20:18:49.007617"], ["updated_at", "2019-06-04 20:18:49.007617"]]
+  ↳ db/seeds.rb:31
+  [1m[36mMatch Create (0.4ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 5], ["owner_id", 3], ["created_at", "2019-06-04 20:18:49.010380"], ["updated_at", "2019-06-04 20:18:49.010380"]]
+  ↳ db/seeds.rb:31
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:31
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mMatch Create (0.4ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 6], ["owner_id", 4], ["created_at", "2019-06-04 20:18:49.034758"], ["updated_at", "2019-06-04 20:18:49.034758"]]
+  ↳ db/seeds.rb:32
+  [1m[36mMatch Create (0.3ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 7], ["owner_id", 4], ["created_at", "2019-06-04 20:18:49.036739"], ["updated_at", "2019-06-04 20:18:49.036739"]]
+  ↳ db/seeds.rb:32
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:33
+  [1m[36mMatch Create (0.4ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 8], ["owner_id", 5], ["created_at", "2019-06-04 20:18:49.042052"], ["updated_at", "2019-06-04 20:18:49.042052"]]
+  ↳ db/seeds.rb:33
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:34
+  [1m[36mMatch Create (0.4ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 9], ["owner_id", 6], ["created_at", "2019-06-04 20:18:49.047848"], ["updated_at", "2019-06-04 20:18:49.047848"]]
+  ↳ db/seeds.rb:34
+  [1m[36mMatch Create (0.3ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 10], ["owner_id", 6], ["created_at", "2019-06-04 20:18:49.049514"], ["updated_at", "2019-06-04 20:18:49.049514"]]
+  ↳ db/seeds.rb:34
+  [1m[36mMatch Create (0.3ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 11], ["owner_id", 6], ["created_at", "2019-06-04 20:18:49.051120"], ["updated_at", "2019-06-04 20:18:49.051120"]]
+  ↳ db/seeds.rb:34
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:35
+  [1m[36mMatch Create (0.3ms)[0m  [1m[32mINSERT INTO "matches" ("pet_id", "owner_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pet_id", 13], ["owner_id", 7], ["created_at", "2019-06-04 20:18:49.056466"], ["updated_at", "2019-06-04 20:18:49.056466"]]
+  ↳ db/seeds.rb:35
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:35

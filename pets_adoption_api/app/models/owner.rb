@@ -1,3 +1,4 @@
 class Owner < ApplicationRecord
-    has_many :pets, through: :matchs 
+    has_many :matches
+    has_many :pets, through: :matches 
 end
