@@ -3,10 +3,10 @@
 
 
 
-# Title: Slender, A New Dating App!
+# Title: Pet4Lyfe, A New Pet Matching App!
 
 # Description:
-Slender was inspired by one of the currently popular dating apps Tinder. I wanted people typically (teens, & middle-aged) Men & and Women to find an easier way to approach the dating scene. Also, the chance to connect with eachother prior to an initial meet-up. 
+Like most adoption agencies finding a pet a home are often hard. With Pet4Lyfe I wanted to help users search for the perfect furry friend. Based on the Owner/Seeker's preference, They can swipe through pet profiles and click on them for more information on the animal. If the user is still interested in adopting then they will be able to inquire more about the process by filling out a form on our adoption page. 
 
 # Technologies Used:
 React (Front-end)
@@ -14,10 +14,10 @@ Ruby on Rails (Back-end)
 
 # Features: 
 Limited Likes & Dislike Profile Option.
-Paid Option for Users to Unlock Unlimited Likes,Profile Promotions & International Matching.
-Click/ Swipe Left or Right on User's Profiles To Express Interest.
-Message Board For Users To Converse More Privately.
-Easy Access To Viewing Matches Near you.
+Place a pet on your wishlist
+Click/ Swipe Left or Right on Pet's Profiles To Express Interest.
+Forum From Owners Who Adopted Pets Using Our App
+Easy Access To Viewing Pets Near you.
 
 # Project TimeLine:
  
