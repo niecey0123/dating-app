@@ -1,44 +1,69 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {Route, Switch} from 'react-router-dom'
+import PetList from './components/PetList/Petlist'
+import PetItem from './components/PetItem/PetItem'
+import PetDetailPage from './components/PetDetailPage/PetDetailPage'
 import axios from 'axios'
+import Header from './components/Header/Header'
+import {fecthAllPets} from './services/api-helper'
+
 import './App.css';
 
-class App extends Component {
+
+class App extends Component  {
   constructor() {
     super();
     this.state = {
-      apiData: null,
+      pets: null,
       apiDataLoaded: false,
+      currentPet: {}
     };
   }
 
-  componentDidMount = async () => {
-    const pets = await axios.get('http://localhost:4567/pets');
-    const apiData = pets.data;
+  getPetData = async ()=>{
+    const pets = await fecthAllPets();
+    this.setState({
+      pets: pets,
+      apiDataLoaded:true
+    })
   }
-  
-  
 
-  showPetsOnPage() {
-    return this.state.apiData.map((pet) => {
-      return (
-        <div className="quote" key={pet.id}>
-          <p className="content">{pet.name}</p>
-          <span className="author">{pet.breed}</span>
-          <span className="category">{pet.age}</span>
-          <span className="category">{pet.location}</span>
-          <span className="category">{pet.description}</span>
-        </div>
-      );
-    });
+  componentDidMount = async () => {
+    this.getPetData()
   }
+  
+  setCurrentPet = (pet) => {
+    this.setState({
+      currentPet: pet
+    })
+  }
+
 
   render() {
+    console.log(this.state)
     return (
       <div className="App">
-        <div>
-          {(this.state.apiDataLoaded) ? this.showPetsOnPage() : <p>Loading...</p>}
-        </div>
-      </div>
+       <Header />
+
+       <Switch>
+        <Route exact path= '/pets' 
+              render={()=> <PetList pets={this.state.pets}
+                                    setCurrentPet={this.setCurrentPet} />}
+        />
+              
+        {/* <Route exact path= '/pets/:id' 
+              render={()=> <PetItem pets={this.state.pets}
+                                    setCurrentPet={this.setCurrentPet}
+                                    currentPet={this.state.currentPet} />} 
+        />   */}
+
+        <Route exact path= '/pets/:id' 
+              render={()=> <PetDetailPage pets={this.state.pets}
+                                    setCurrentPet={this.setCurrentPet}
+                                    currentPet={this.state.currentPet} />} 
+        />  
+      </Switch>
+    </div>
     );
   }
 }
