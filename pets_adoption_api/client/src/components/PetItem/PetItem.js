@@ -21,10 +21,11 @@ const PetItem = ({pet, setCurrentPet}) => {
             </Link>
            <button><Link 
                     onClick={()=> setCurrentPet(pet)}
-                    to={`/edit-pet/${pet.id}`}>Edit Bars
+                    to={`/edit-pet/${pet.id}`}>Edit Pet
                   </Link> </button>
             
             <button onClick={() => deletePet(pet)}>Delete Pet</button>
+            <button>Like Pet</button>
         </div>
     );
 }

@@ -10,6 +10,23 @@ class OwnersController < ApplicationController
         render @owner
     end
 
+        def create
+            @owner = Owner.new(owner_params)
+        
+            if @owner.save
+              render json: @owner, status: :created
+            else
+              render json: @owner.errors, status: :unprocessable_entity
+            end
+          end  
+        
+        private
+        
+        def owner_params
+              params.require(:owner).permit(:name, :email, :age, :location, :description,:phone_number)
+         end
+
+
     def update
         @owner = Owner.find(params[:id])
         if @owner.update(pet_params)
