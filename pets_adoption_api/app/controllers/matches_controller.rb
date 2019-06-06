@@ -1,15 +1,7 @@
 class MatchesController < ApplicationController
-
-    def index
-        @owners = Owner.find(params[:owner_id])
-        @pets = @owners.pets.as_json(:include => :matches)
-        render json: @pets, include: :owners, status: :ok
-        # @matches = Match.all
-    end
-
     def show
-        @owner = Owner.find(params[:id])
-        @owners = @pet.owners
+      @owners = Owner.find(params[:owner_id])
+      @pets = @owners.pets.as_json(:include => :matches)
         
         @owner = @owners.select { |owner|
           owner.id.to_i == params[:id].to_i
@@ -26,24 +18,25 @@ class MatchesController < ApplicationController
       end
 
     
-        def create
-            @owner = Owner.find(params[:owner_id])
-            @pet = Pet.new(match_params)
-            
-            if @owner.save
-              @owner.pets.push(@pet)
-              render json: @pet, status: :created
-            else
-              render json: { errors: @pet.errors }, status: :unprocessable_entity
-            end
-          end          
-      
+    def create
+      @pet = Pet.find(params[:pet_id])
+      @owner = Owner.find(params[:owner_id])
+      @owner.pets.push(@pet)
+      render json: @owner, include: :pets, status: :created
+    end     
 
-
-      private
-
-      def match_params
-        params.permit(:name,:breed,:description, :owner_id)
+    def destroy
+      @match = Match.find(params[:id])
+      # if not the right user cancel
+      # if no match cancel
+      if @match
+        @match.destroy
+        head :no_content
+      else
+        head :internal_server_error
       end
+    end
+
+
     
 end

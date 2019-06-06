@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom'
 import { petUpdate } from '../../services/api-helper';
+import ImageUploader from 'react-images-upload';
+// import { getPetData } from '../../App.js'
+
 
 class EditPet extends Component {
   constructor(props){
     super(props)
     this.state ={
       pet: props.currentPet,
-      updated:false
+      updated:false,
+      pictures:[]
+      
     }
     console.log(props.currentPet)
-
+    this.onDrop = this.onDrop.bind(this);
   }
+  onDrop(picture) {
+    this.setState({
+        pictures: this.state.pictures.concat(picture),
+    });
+}
   onPetFormChange = async (event) => {
     const element = event.target
     const name = element.name
@@ -40,7 +50,9 @@ class EditPet extends Component {
       
     }
    
-    const pet = await petUpdate(this.props.currentPet.id, updatedPet)
+    const pet = await petUpdate(this.props.currentPet.id, updatedPet);
+    // get pets
+    this.props.petData()
  console.log(pet)
     this.setState({
       pet: pet,
@@ -110,12 +122,20 @@ class EditPet extends Component {
             onChange={ this.onPetFormChange }
             placeholder="" />
         </div>
+        <ImageUploader
+                withIcon={true}
+                buttonText='Choose images'
+                onChange={this.onDrop}
+                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                maxFileSize={5242880}
+            />
 
         <div>
           <button 
             onClick={() => this.onPetFormSubmit}
             type="submit">Submit</button>
         </div>
+        
       </form>
     </div>
     )
