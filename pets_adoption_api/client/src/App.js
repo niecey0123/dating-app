@@ -7,9 +7,12 @@ import CreateOwner from './components/CreateOwner/CreateOwner'
 import ProfilePage from './components/ProfilePage/ProfilePage'
 import Header from './components/Header/Header'
 import {fecthAllPets} from './services/api-helper'
+import {fecthAllOwners, setOwnerToPet, getMatches} from './services/owner-api-helper'
+import Matches from './components/Matches/Matches';
 // import {createOwner} from './services/owner-api-helper'
 
 import './App.css';
+
 
 
 class App extends Component  {
@@ -19,7 +22,10 @@ class App extends Component  {
       pets: null,
       apiDataLoaded: false,
       currentPet: {},
-      user:{}
+      user:{},
+      owners:null,
+      currentOwner:{},
+      matches : []
       // currentOwner:{}
     };
   }
@@ -32,6 +38,22 @@ class App extends Component  {
     })
   }
 
+  // getOwnerData = async ()=>{
+  //   const owners = await fecthAllOwners()
+  //   this.setState({
+  //     owners:owners,
+  //   })
+  // }
+   petFaves = async (ownerId,petId)=>{
+  return await setOwnerToPet(ownerId,petId)  
+}
+
+   matchDisplay = async (ownerId, petId, matchId)=>{
+    return await getMatches(2,3,2);
+    
+  }    
+
+
   createAnOwner = (user) => {
     this.setState({
       user:user
@@ -39,7 +61,7 @@ class App extends Component  {
   }
 
   componentDidMount = async () => {
-    this.getPetData()
+    await this.getPetData()
   }
   
   setCurrentPet = (pet) => {
@@ -57,7 +79,8 @@ class App extends Component  {
        <Switch>
         <Route exact path= '/pets' 
               render={()=> <PetList pets={this.state.pets}
-                                    setCurrentPet={this.setCurrentPet} />}
+                                    setCurrentPet={this.setCurrentPet} 
+                                    faves={this.petFaves}/>}
         />
               
          <Route exact path= '/create-owner' 
@@ -81,6 +104,12 @@ class App extends Component  {
                                     setCurrentPet={this.setCurrentPet}
                                     currentPet={this.state.currentPet} />} 
         />  
+       
+       <Route exact path= '/matches' 
+       render={()=>  <Matches 
+        matchDisplay={this.matchDisplay}/>}>
+       </Route>
+
       </Switch>
     </div>
     );

@@ -1,10 +1,11 @@
 import React from 'react';
 import {petDeletion} from '../../services/api-helper'
 
+
+
 import { Link } from 'react-router-dom'
 
-const PetItem = ({pet, setCurrentPet}) => {
-    
+const PetItem = (props) => {
     const deletePet = async (pet)=>{
         console.log(pet.id)
         await petDeletion(pet.id, pet)
@@ -13,18 +14,20 @@ const PetItem = ({pet, setCurrentPet}) => {
     
     return (
         <div>
-            <Link to={`/pets/${pet.id}`}
-                  onClick={() => setCurrentPet(pet)}>
+            <Link to={`/pets/${props.pet.id}`}
+                  onClick={() => props.setCurrentPet(props.pet)}>
                 <p className="name"></p>
-                <img src={pet.photo} alt="PetImages" />
-                <p className="breed">{pet.breed}</p>
+                <img src={props.pet.photo} alt="PetImages" />
+                <p className="breed">{props.pet.breed}</p>
             </Link>
            <button><Link 
-                    onClick={()=> setCurrentPet(pet)}
-                    to={`/edit-pet/${pet.id}`}>Edit Pet
+                    onClick={()=> props.setCurrentPet(props.pet)}
+                    to={`/edit-pet/${props.pet.id}`}>Edit Pet
                   </Link> </button>
             
-            <button onClick={() => deletePet(pet)}>Delete Pet</button>
+            <button onClick={() => deletePet(props.pet)}>Delete Pet</button>
+             
+            <Link to='/matches'><button onClick={() => props.faves(3, props.pet.id)}>Like Pet</button></Link>
         </div>
     );
 }

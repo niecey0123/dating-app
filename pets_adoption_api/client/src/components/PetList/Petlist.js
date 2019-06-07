@@ -1,16 +1,28 @@
 import React from 'react';
-
+import 'typeface-roboto';
 import PetItem from '../PetItem/PetItem'
+// import { Card, Icon, Image } from 'semantic-ui-react'
 
-const PetList = ({pets, setCurrentPet}) => {
+
+
+
+
+const PetList = ( props) => {
+  console.log(props.pets)
   
-  const data =  pets && pets.map((pet, index) => {
+  
+
+
+  const data =  props.pets && props.pets.map((pet, index) => {
     return  <PetItem key={pet.id} 
                       pet={pet}
-                      setCurrentPet={setCurrentPet} />
+                      faves={props.faves}
+                      setCurrentPet={props.setCurrentPet} />
   })
 
   return (
+
+    
     <div>{ data }</div>
   )
 }

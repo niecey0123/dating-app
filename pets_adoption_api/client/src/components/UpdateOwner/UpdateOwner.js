@@ -7,7 +7,7 @@ class EditPet extends Component {
   constructor(props){
     super(props)
     this.state ={
-      pet: props.currentPet,
+      owner: props.currentPet,
       updated:false
       
     }
@@ -98,7 +98,7 @@ class EditPet extends Component {
           <input
             id="location"
             type="text"
-            name="location"
+            name="locatiob"
             defaultValue={this.props.currentPet.location}
             onChange={ this.onPetFormChange }
             placeholder="ex Brooklyn" />
