@@ -23,18 +23,11 @@ class OwnersController < ApplicationController
         private
         
         def owner_params
-              params.require(:owner).permit(:name, :email, :age, :location, :description,:phone_number)
+              params.require(:owner).permit(:name, :age, :location, :email, :phone_number, :description)
          end
+        
 
 
-    def update
-        @owner = Owner.find(params[:id])
-        if @owner.update(pet_params)
-            render json: @owner, status: :ok
-          else
-            render json: { errors: @owner.errors }, status: :unprocessable_entity
-        end
-    end
 
     def destroy
         @owner = Owner.find(params[:id])
@@ -43,12 +36,19 @@ class OwnersController < ApplicationController
         
     end
 
-    private
-    def get_owners
+    def update
         @owner = Owner.find(params[:id])
+        if @owner.update(owner_params)
+            render json: @owner, status: :ok
+          else
+            render json: { errors: @owner.errors }, status: :unprocessable_entity
+        end
     end
 
-    def pet_params
-      params.require(:owner).permit(:name, :age, :breed, :location, :photo, :email, :phone_number, :description)
+    private
+
+
+    def owner_params
+      params.require(:owner).permit(:name, :age, :location, :email, :phone_number, :description)
     end
 end

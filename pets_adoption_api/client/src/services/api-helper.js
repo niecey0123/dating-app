@@ -11,7 +11,6 @@ export const fecthAllPets = async ()=>{
    try {
       const resp = await api.get("/") 
       return resp.data
-      console.log(resp.data)
    } catch (error) {
        console.log(error)
    }

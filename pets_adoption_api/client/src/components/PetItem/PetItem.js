@@ -25,7 +25,6 @@ const PetItem = ({pet, setCurrentPet}) => {
                   </Link> </button>
             
             <button onClick={() => deletePet(pet)}>Delete Pet</button>
-            <button>Like Pet</button>
         </div>
     );
 }
