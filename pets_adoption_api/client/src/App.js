@@ -63,7 +63,8 @@ class App extends Component  {
               render={() => <EditPet 
                 pets={this.state.pets}
                 currentPet={this.state.currentPet}
-                setCurrentPet={this.setCurrentPet} />} 
+                setCurrentPet={this.setCurrentPet} 
+                petData={this.getPetData}/>} 
           />
 
         <Route exact path= '/pets/:id' 
