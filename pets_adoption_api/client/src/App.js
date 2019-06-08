@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom'
 import PetList from './components/PetList/Petlist'
-import PetItem from './components/PetItem/PetItem'
 import PetDetailPage from './components/PetDetailPage/PetDetailPage'
 import EditPet from './components/EditPet/EditPet'
-
-import axios from 'axios'
+import CreateOwner from './components/CreateOwner/CreateOwner'
+import ProfilePage from './components/ProfilePage/ProfilePage'
 import Header from './components/Header/Header'
 import {fecthAllPets} from './services/api-helper'
+// import {createOwner} from './services/owner-api-helper'
 
 import './App.css';
 
@@ -18,7 +18,9 @@ class App extends Component  {
     this.state = {
       pets: null,
       apiDataLoaded: false,
-      currentPet: {}
+      currentPet: {},
+      user:{}
+      // currentOwner:{}
     };
   }
 
@@ -27,6 +29,12 @@ class App extends Component  {
     this.setState({
       pets: pets,
       apiDataLoaded:true
+    })
+  }
+
+  createAnOwner = (user) => {
+    this.setState({
+      user:user
     })
   }
 
@@ -40,7 +48,6 @@ class App extends Component  {
     })
   }
 
-
   render() {
     console.log(this.state)
     return (
@@ -53,11 +60,13 @@ class App extends Component  {
                                     setCurrentPet={this.setCurrentPet} />}
         />
               
-        {/* <Route exact path= '/pets/:id' 
-              render={()=> <PetItem pets={this.state.pets}
-                                    setCurrentPet={this.setCurrentPet}
-                                    currentPet={this.state.currentPet} />} 
-        />   */}
+         <Route exact path= '/create-owner' 
+              render={()=> <CreateOwner updatedUser={this.createAnOwner} />} 
+        />  
+        
+        <Route exact path= '/my-profile' 
+              render={()=> <ProfilePage user={this.state.user} />} 
+        />  
           <Route 
               exact path='/edit-pet/:id'
               render={() => <EditPet 
