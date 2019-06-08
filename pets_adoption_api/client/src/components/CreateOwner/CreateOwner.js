@@ -41,7 +41,9 @@ class CreateOwner extends Component {
 
   render() {
     if(this.state.created === true){
-        return <ProfilePage owner={this.state.currentOwner}/>
+        return <ProfilePage owner={this.state.currentOwner}
+        
+        />
     }
     return (          
         <form className="datForm" onSubmit={this.onSignUpFormSubmit}>

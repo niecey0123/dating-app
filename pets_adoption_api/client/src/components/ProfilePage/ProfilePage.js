@@ -2,7 +2,7 @@
  import '../../ProfilePage.css';
  import { Link } from 'react-router-dom'
  import {ownerDeletion} from '../../services/owner-api-helper'
-
+import '../../ProfilePage.css'
 
 
 
@@ -33,23 +33,19 @@ const ProfilePage=(props)=>{
                 <p className="title is-4  "id="ownerEmail">{email}</p>
                 <p className="title is-4" id="ownerAge">{age}</p>
                 <p className="subtitle is-6" id="ownerLocay">{location}</p>
-        
-        
-        
-             
-            <div className="content">
+         <div className="content">
             {description}
             <br />
-            <footer class="card-footer">
-            <p class="card-footer-item">
+            <footer className="card-footer">
+            <p className="card-footer-item">
                     <span>
                         Edit <Link to={`/my-profile/${props.owner.id}`}
                   onClick={() => props.setCurrentOwner(props.owner)}>Profile</Link>
                     </span>
                     </p>
-                    <p class="card-footer-item">
+                    <p className="card-footer-item">
                     <span>
-                        Delete <span onClick={() => deleteUser(props.owner)}>Profile</span>
+                        Delete <Link to={'/create-owner'} onClick={() => deleteUser(props.owner)}>Profile</Link>
                     </span>
                     </p>
           </footer>

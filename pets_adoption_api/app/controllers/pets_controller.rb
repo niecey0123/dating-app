@@ -28,22 +28,22 @@ def destroy
   head :no_content
 end
 
-# def update
-#     @pet = Pet.find(params[:id])
+def update
+    @pet = Pet.find(params[:id])
     
-#     if @pet.update(pet_params)
-#       render json: @pet, status: :ok
-#     else
-#       render json: { errors: @pet.errors }, status: :unprocessable_entity
-#       end
+    if @pet.update(pet_params)
+      render json: @pet, status: :ok
+    else
+      render json: { errors: @pet.errors }, status: :unprocessable_entity
+      end
 
-#     end
+    end
 
-#   private
+  private
 
-#   def pet_params
-#     params.require(:pet).permit(:name, :age, :breed, :location, :photo, :description)
-#   end
+  def pet_params
+    params.require(:pet).permit(:name, :age, :breed, :location, :photo, :description)
+  end
 
-# end
+
 end

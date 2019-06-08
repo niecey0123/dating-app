@@ -7,8 +7,9 @@ import CreateOwner from './components/CreateOwner/CreateOwner'
 import ProfilePage from './components/ProfilePage/ProfilePage'
 import Header from './components/Header/Header'
 import {fecthAllPets} from './services/api-helper'
-import { setOwnerToPet, getMatches} from './services/owner-api-helper'
+import { fecthAllOwners, setOwnerToPet, getMatches} from './services/owner-api-helper'
 import Matches from './components/Matches/Matches';
+import OwnerList from './components/OwnerList/OwnerList'
 // import {createOwner} from './services/owner-api-helper'
 
 import './App.css';
@@ -23,9 +24,13 @@ class App extends Component  {
       apiDataLoaded: false,
       currentPet: {},
       user:{},
-      matches : []
-      // currentOwner:{}
+      matches : [],
+      currentOwner:{},
+      owners:null
     };
+    this.getOwnerData = this.getOwnerData.bind(this)
+    this.getPetData = this.getPetData.bind(this)
+
   }
 
   getPetData = async ()=>{
@@ -34,6 +39,13 @@ class App extends Component  {
       pets: pets,
       apiDataLoaded:true
     })
+  }
+  getOwnerData = async ()=>{
+    const owners = await fecthAllOwners();
+    this.setState({
+      owners: owners,
+    })
+    console.log(owners)
   }
 
    petFaves = async (ownerId,petId)=>{
@@ -44,7 +56,7 @@ class App extends Component  {
     return await getMatches(2,3,2);
     
   }    
-
+ 
 
   createAnOwner = (user) => {
     this.setState({
@@ -52,13 +64,25 @@ class App extends Component  {
     })
   }
 
+
+
+
   componentDidMount = async () => {
     await this.getPetData()
+    await this.getOwnerData()
+    
   }
+   
+ 
   
   setCurrentPet = (pet) => {
     this.setState({
       currentPet: pet
+    })
+  }
+  setCurrentOwner = (owner) => {
+    this.setState({
+      currentOwner: owner
     })
   }
 
@@ -80,7 +104,17 @@ class App extends Component  {
         />  
         
         <Route exact path= '/my-profile' 
-              render={()=> <ProfilePage user={this.state.user} />} 
+              render={()=> <ProfilePage user={this.state.user}
+              setCurrentOwner={this.setCurrentOwner} 
+              />} 
+        />  
+
+        <Route exact path= '/owners' 
+              render={()=> <OwnerList 
+              setCurrentOwner={this.setCurrentOwner} 
+              owners={this.state.owners}
+
+              />} 
         />  
           <Route 
               exact path='/edit-pet/:id'
