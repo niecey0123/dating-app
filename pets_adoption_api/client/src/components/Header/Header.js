@@ -42,10 +42,10 @@ return(
         </div>
 
 
-    <div class="navbar-end">
-    <div class="navbar-item">
-    <div class="buttons">
-    <ul class="button  is-light">
+    <div className="navbar-end">
+    <div className="navbar-item">
+    <div className="buttons">
+    <ul className="button  is-light">
     <li className="navbar-item"><Link to={'/create-owner'}>Sign Up</Link></li>
           </ul>
             </div>

@@ -1,0 +1,17 @@
+.profileContainer{
+    width: 100vw;
+    height: 100vh;
+    border: black solid;
+}
+.card{
+    width:600px;
+    height:715px;
+    margin-left: 25%;
+    font-size: 15pt;
+    padding: 5px;
+    margin-top: 2%;
+}
+.card h1{
+    text-align: center;
+}
+

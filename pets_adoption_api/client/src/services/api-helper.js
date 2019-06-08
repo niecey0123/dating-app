@@ -4,7 +4,11 @@ import axios from 'axios'
 const URL = "http://localhost:4567"
 
 const api = axios.create({
-    baseURL:   `${URL}/pets`
+    baseURL:   `${URL}/pets`,
+    headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
 })
 
 export const fecthAllPets = async ()=>{

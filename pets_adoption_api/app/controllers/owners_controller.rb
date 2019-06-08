@@ -7,7 +7,7 @@ class OwnersController < ApplicationController
 
     def show
         @owner = Owner.find(params[:id])
-        render @owner
+        render json: @owner
     end
 
         def create

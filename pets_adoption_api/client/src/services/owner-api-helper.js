@@ -3,8 +3,14 @@ import axios from 'axios'
 const URL = "http://localhost:4567"
 
 const api = axios.create({
-    baseURL:   `${URL}/owners`
+    baseURL:   `${URL}/owners`,
+    headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
 })
+
+
 
 
 export const fecthAllOwners = async ()=>{
@@ -35,6 +41,15 @@ export const fecthAllOwners = async ()=>{
       
   }
  
+  export const fetchOwner = async (id)=>{
+      try {
+        const resp = await axios.get(`/${id}`)  
+        return resp.data
+      } catch (error) {
+          console.log(error)
+      }
+  }
+
   export const ownerUpdate = async (id,data)=>{
      try {
          const resp = await api.put(`/${id}`, data)

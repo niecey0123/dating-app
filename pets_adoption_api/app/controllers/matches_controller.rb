@@ -1,14 +1,22 @@
 class MatchesController < ApplicationController
+
+  def index
+    @owner = Owner.find(params[:owner_id]).as_json(:include => :matches)
+      
+    if @owner
+      render json: @owner, include: :pets, status: :ok
+    else
+      render json: {
+        message: "No Matches Found"
+      },
+      status: :not_found
+    end
+  end
   
   def show
-    @owners = Owner.find(params[:owner_id])
-    @pets = @owners.pets.as_json(:include => :matches)
+    @owner = Owner.find(params[:owner_id]).as_json(:include => :matches)
       
-      @owner = @owners.select { |owner|
-        owner.id.to_i == params[:id].to_i
-      }
-      
-      if !@owner.empty?
+      if @owner
         render json: @owner, include: :pets, status: :ok
       else
         render json: {

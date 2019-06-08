@@ -7,7 +7,7 @@ import CreateOwner from './components/CreateOwner/CreateOwner'
 import ProfilePage from './components/ProfilePage/ProfilePage'
 import Header from './components/Header/Header'
 import {fecthAllPets} from './services/api-helper'
-import {fecthAllOwners, setOwnerToPet, getMatches} from './services/owner-api-helper'
+import { setOwnerToPet, getMatches} from './services/owner-api-helper'
 import Matches from './components/Matches/Matches';
 // import {createOwner} from './services/owner-api-helper'
 
@@ -23,8 +23,6 @@ class App extends Component  {
       apiDataLoaded: false,
       currentPet: {},
       user:{},
-      owners:null,
-      currentOwner:{},
       matches : []
       // currentOwner:{}
     };
@@ -38,12 +36,6 @@ class App extends Component  {
     })
   }
 
-  // getOwnerData = async ()=>{
-  //   const owners = await fecthAllOwners()
-  //   this.setState({
-  //     owners:owners,
-  //   })
-  // }
    petFaves = async (ownerId,petId)=>{
   return await setOwnerToPet(ownerId,petId)  
 }
@@ -84,7 +76,7 @@ class App extends Component  {
         />
               
          <Route exact path= '/create-owner' 
-              render={()=> <CreateOwner updatedUser={this.createAnOwner} />} 
+              render={()=> <CreateOwner createddUser={this.createAnOwner} />} 
         />  
         
         <Route exact path= '/my-profile' 
@@ -98,6 +90,7 @@ class App extends Component  {
                 setCurrentPet={this.setCurrentPet} 
                 petData={this.getPetData}/>} 
           />
+         
 
         <Route exact path= '/pets/:id' 
               render={()=> <PetDetailPage pets={this.state.pets}

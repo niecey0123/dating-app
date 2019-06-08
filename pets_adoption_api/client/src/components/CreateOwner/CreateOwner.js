@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom'
+import ProfilePage from '../ProfilePage/ProfilePage'
 import {createOwner} from '../../services/owner-api-helper'
 import '../../CreateOwner.css'
-
-
-
 
 class CreateOwner extends Component {
   constructor(props) {
@@ -12,12 +9,9 @@ class CreateOwner extends Component {
   
     this.state = {
      currentOwner:{},
-     created: false,
-     selectedFile:null
+     created: false
     };
-
   };
-
 
   onSignUpFormChange = (event) => {
     const { name, value } = event.target
@@ -28,7 +22,6 @@ class CreateOwner extends Component {
     e.preventDefault()
     console.log(`Owner Submitted:`, this.state)
 
-
     let newOwner = {
       name: this.state.name,
       age: this.state.age,
@@ -38,25 +31,21 @@ class CreateOwner extends Component {
       description: this.state.description
     }
 
-    const owner = await createOwner(newOwner);
-    this.props.updatedUser(owner);
-     this.setState({
+    const owner = await createOwner(newOwner)
+    console.log(owner)
+    this.setState({
       currentOwner: owner,
       created: true
     })
-
   }
-  
+
   render() {
-    const { currentOwner } = this.state;
     if(this.state.created === true){
-        return <Redirect to={{
-          pathname: '/my-profile',
-          state: { currentOwner }
-        }}/>
+        return <ProfilePage owner={this.state.currentOwner}/>
     }
     return (          
-      <form className="datForm" onSubmit={this.onSignUpFormSubmit}>
+        <form className="datForm" onSubmit={this.onSignUpFormSubmit}>
+      <img className='formImg'src={require('../../images/pet.png')} alt='animals'/>
         <h1>Create An Account</h1>
         <div className="field">
           <label htmlFor="name" className="label">Name</label>
@@ -131,7 +120,7 @@ class CreateOwner extends Component {
        
         <div className="field is-grouped">
           <div className="control">
-            <button onClick={this.fileUploadHandler} className="button is-link">Submit</button>
+            <button className="button is-link">Submit</button>
           </div>
           <div className="control">
             <button className="button is-text">Cancel</button>
@@ -141,5 +130,4 @@ class CreateOwner extends Component {
     )
   }
 }
-
 export default CreateOwner
