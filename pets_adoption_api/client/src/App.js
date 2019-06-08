@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom'
 import PetList from './components/PetList/Petlist'
 import PetDetailPage from './components/PetDetailPage/PetDetailPage'
+import OwnerDisplay from './components/OwnerDisplay/OwnerDisplay'
 import EditPet from './components/EditPet/EditPet'
 import CreateOwner from './components/CreateOwner/CreateOwner'
 import ProfilePage from './components/ProfilePage/ProfilePage'
@@ -13,6 +14,7 @@ import OwnerList from './components/OwnerList/OwnerList'
 // import {createOwner} from './services/owner-api-helper'
 
 import './App.css';
+import OwnerDetailsPage from './components/OwnerDetailsPage/OwnerDetailsPage';
 
 
 
@@ -116,6 +118,14 @@ class App extends Component  {
 
               />} 
         />  
+         <Route exact path= '/owners/:id' 
+              render={()=> <OwnerDetailsPage 
+              setCurrentOwner={this.setCurrentOwner} 
+              owners={this.state.owners}
+              currentOwner={this.state.currentOwner}
+
+              />} 
+        /> 
           <Route 
               exact path='/edit-pet/:id'
               render={() => <EditPet 
