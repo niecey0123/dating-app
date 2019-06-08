@@ -1,0 +1,11 @@
+.card{
+    width:600px;
+    height:700px;
+    margin-left: 25%;
+    font-size: 15pt;
+    padding: 5px;
+}
+.fas fa-bone{
+    margin-left:20%;
+    width:20px ;
+}

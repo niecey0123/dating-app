@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom'
 import {createOwner} from '../../services/owner-api-helper'
+import '../../CreateOwner.css'
 
 
 

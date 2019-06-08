@@ -11,7 +11,6 @@ export const fecthAllOwners = async ()=>{
     try {
        const resp = await api.get("/") 
        return resp.data
-       console.log(resp.data)
     } catch (error) {
         console.log(error)
     }
@@ -46,4 +45,22 @@ export const fecthAllOwners = async ()=>{
      }
  }
      
- 
+ export const setOwnerToPet = async (ownerId, petId)=>{
+    try {
+        const resp = await api.post(`/${ownerId}/pets/${petId}/matches`)
+        console.log(resp)
+    } catch (error) {
+       throw error 
+    }
+ }
+
+ export const getMatches = async (ownerId,petId,matchId) => {
+    try {
+        const resp = await api.get(`/${ownerId}/pets/${petId}/matches/1`)
+        console.log(resp.data)
+        return resp.data;
+        
+    } catch (error) {
+       throw error 
+    }
+}
