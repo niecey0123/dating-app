@@ -17,3 +17,25 @@ export const fecthAllPets = async ()=>{
    }
     
 }
+
+export const petDeletion = async (id)=>{
+    try {
+       const resp = await api.delete(`/${id}`) 
+       return resp.data
+    } catch (error) {
+        console.log(error)
+    }
+     
+ }
+
+ export const petUpdate = async (id,data)=>{
+    try {
+        const resp = await api.put(`/${id}`, data)
+        console.log(resp)
+        return resp.data
+    } catch (error) {
+        console.log(error)
+    }
+}
+    
+

@@ -3,6 +3,8 @@ import {Route, Switch} from 'react-router-dom'
 import PetList from './components/PetList/Petlist'
 import PetItem from './components/PetItem/PetItem'
 import PetDetailPage from './components/PetDetailPage/PetDetailPage'
+import EditPet from './components/EditPet/EditPet'
+
 import axios from 'axios'
 import Header from './components/Header/Header'
 import {fecthAllPets} from './services/api-helper'
@@ -56,6 +58,13 @@ class App extends Component  {
                                     setCurrentPet={this.setCurrentPet}
                                     currentPet={this.state.currentPet} />} 
         />   */}
+          <Route 
+              exact path='/edit-pet/:id'
+              render={() => <EditPet 
+                pets={this.state.pets}
+                currentPet={this.state.currentPet}
+                setCurrentPet={this.setCurrentPet} />} 
+          />
 
         <Route exact path= '/pets/:id' 
               render={()=> <PetDetailPage pets={this.state.pets}
