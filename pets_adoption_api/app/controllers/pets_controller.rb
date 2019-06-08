@@ -22,11 +22,11 @@ class PetsController < ApplicationController
         render json: @pet
   end
 
-# def destroy
-#   @pet = Pet.find(params[:id])
-#   @pet.destroy
-#   head :no_content
-# end
+def destroy
+  @pet = Pet.find(params[:id])
+  @pet.destroy
+  head :no_content
+end
 
 # def update
 #     @pet = Pet.find(params[:id])

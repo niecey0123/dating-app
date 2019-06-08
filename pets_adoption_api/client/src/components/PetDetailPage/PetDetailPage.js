@@ -14,14 +14,14 @@ const PetDetailPage = ({currentPet}) => {
               <figure className="image is-4by3">
                 <img src={currentPet.photo} alt="Placeholderimage" />
               </figure>
-              <i class="fas fa-bone" id="bone"></i>
+              <i className="fas fa-bone" id="bone"></i>
             </div>
             <div className="card-content">
               </div>
                 <div className="media-content">
                   <p className="title is-4" id="petName">{currentPet.name}</p>
+                  <p className="subtitle is-6" id="breed">{currentPet.age} year's old</p>
                   <p className="subtitle is-6" id="breed">{currentPet.breed}</p>
-              
               <div className="content">
               {currentPet.description}
               <br />
