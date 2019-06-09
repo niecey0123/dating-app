@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom'
 import PetList from './components/PetList/Petlist'
 import PetDetailPage from './components/PetDetailPage/PetDetailPage'
-import OwnerDisplay from './components/OwnerDisplay/OwnerDisplay'
 import EditPet from './components/EditPet/EditPet'
+import EditOwner from './components/EditOwner/EditOwner'
 import CreateOwner from './components/CreateOwner/CreateOwner'
 import ProfilePage from './components/ProfilePage/ProfilePage'
 import Header from './components/Header/Header'
@@ -11,10 +11,8 @@ import {fecthAllPets} from './services/api-helper'
 import { fecthAllOwners, setOwnerToPet, getMatches} from './services/owner-api-helper'
 import Matches from './components/Matches/Matches';
 import OwnerList from './components/OwnerList/OwnerList'
-// import {createOwner} from './services/owner-api-helper'
-
-import './App.css';
 import OwnerDetailsPage from './components/OwnerDetailsPage/OwnerDetailsPage';
+import './App.css';
 
 
 
@@ -107,9 +105,17 @@ class App extends Component  {
         
         <Route exact path= '/my-profile' 
               render={()=> <ProfilePage user={this.state.user}
-              setCurrentOwner={this.setCurrentOwner} 
+              // setCurrentOwner={this.setCurrentOwner} 
               />} 
         />  
+
+        <Route exact path= '/edit-owner/:id' 
+              render={()=> <EditOwner
+                owners={this.state.owners}
+                setCurrentOwner={this.setCurrentOwner} 
+                currentOwner={this.state.currentOwner}
+                ownerData={this.getOwnerData} />} 
+        /> 
 
         <Route exact path= '/owners' 
               render={()=> <OwnerList 
@@ -120,8 +126,8 @@ class App extends Component  {
         />  
          <Route exact path= '/owners/:id' 
               render={()=> <OwnerDetailsPage 
-              setCurrentOwner={this.setCurrentOwner} 
               owners={this.state.owners}
+              setCurrentOwner={this.setCurrentOwner} 
               currentOwner={this.state.currentOwner}
 
               />} 

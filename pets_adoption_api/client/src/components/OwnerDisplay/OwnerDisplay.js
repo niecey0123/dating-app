@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const OwnerDisplay = (props) => {
     const deleteOwner = async (owner)=>{
-        console.log(owner.id)
+        console.log(owner)
         await ownerDeletion(owner.id, owner)
         document.location.reload();
     }
@@ -32,7 +32,7 @@ const OwnerDisplay = (props) => {
           </Link>
           <footer className="card-footer">
           <button>
-              <Link onClick={()=> props.setCurrentPet(props.pet)}
+              <Link onClick={()=> props.setCurrentOwner(props.owner)}
                               to={`/edit-owner/${props.owner.id}`}>Edit Owner </Link> </button>
                       
               <button onClick={() => deleteOwner(props.owner)}>Delete Pet</button>
