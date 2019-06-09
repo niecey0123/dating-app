@@ -54,7 +54,7 @@ class EditOwner extends Component {
 
   render(){
     if(this.state.updated === true) {
-      return <Redirect to="/my-profile" />
+      return <Redirect to="/owners" />
     }
     
     return (

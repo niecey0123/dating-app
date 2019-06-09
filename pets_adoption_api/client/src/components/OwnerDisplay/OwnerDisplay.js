@@ -26,7 +26,7 @@ const OwnerDisplay = (props) => {
           <div className="card-content">
             </div>
               <div className="media-content">
-                <p className="title is-4">{props.owner.age}</p>
+                <p className="title is-4">{props.owner.name}</p>
             
           </div>
           </Link>
