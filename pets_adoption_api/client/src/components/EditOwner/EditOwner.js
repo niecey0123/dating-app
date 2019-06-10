@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom'
 import { ownerUpdate } from '../../services/owner-api-helper';
-
+import '../../EditOwner.css'
 
 class EditOwner extends Component {
   constructor(props){
@@ -58,11 +58,15 @@ class EditOwner extends Component {
     }
     
     return (
-      <div className="updateOwnerPage">
+        <div className='ownerUpdatePage'>
       <form onSubmit={ this.onOwnerFormSubmit } >
-        <div>
-          <label htmlFor="name">Name:</label>
+      <h1>Edit Account</h1>
+
+        <div className="field">
+          <label htmlFor="name" className="label">Name:</label>
+          <div className="control">
           <input
+            className="input"
             id="name"
             type="text"
             name="name"
@@ -71,9 +75,10 @@ class EditOwner extends Component {
             placeholder="Name" />
         </div>
 
-        <div>
-          <label htmlFor="email">Email:</label>
+        <div className="field">
+          <label htmlFor="email" className="label">Email:</label>
           <input
+            className="input"
             id="email"
             type="text"
             name="email"
@@ -82,9 +87,10 @@ class EditOwner extends Component {
             placeholder="ex PettyWap@bet.com" />
         </div>
         
-        <div>
-        <label htmlFor="age">Age:</label>
+        <div className="field">
+        <label htmlFor="age" className="label">Age:</label>
           <input
+            className="input"
             id="age"
             type="text"
             name="age"
@@ -93,9 +99,10 @@ class EditOwner extends Component {
             placeholder="ex Golden Retriever" />
         </div>
         
-        <div>
-          <label htmlFor="location">Location:</label>
+        <div className="field">
+          <label htmlFor="location" className="label">Location:</label>
           <input
+            className="input"
             id="location"
             type="text"
             name="location"
@@ -104,9 +111,10 @@ class EditOwner extends Component {
             placeholder="ex Brooklyn" />
         </div>
 
-        <div>
-          <label htmlFor="description">Bio:</label>
+        <div className="field">
+          <label htmlFor="description" className="label">Bio:</label>
           <input
+           className="input"
             id="description"
             type="text"
             name="description"
@@ -120,9 +128,9 @@ class EditOwner extends Component {
             onClick={() => this.onOwnerFormSubmit}
             type="submit">Submit</button>
         </div>
-        
+        </div>
       </form>
-    </div>
+      </div>
     )
   }
 }

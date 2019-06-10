@@ -1,0 +1,17 @@
+.matchContainer{
+    border: solid;
+    width: 100vw;
+    height: 100vh;
+}
+#matches{
+    margin-left: 20%;
+}
+article{
+    width: 400px;
+}
+.matchContainer h1{
+    font-size: 30pt;
+}
+.matchContainer h2{
+    font-size: 16pt;
+}

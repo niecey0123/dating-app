@@ -2,7 +2,7 @@ import React from 'react';
 import 'typeface-roboto';
 import PetItem from '../PetItem/PetItem'
 // import { Card, Icon, Image } from 'semantic-ui-react'
-
+import  '../../PetList.css';
 
 
 
@@ -23,10 +23,8 @@ const PetList = ( props) => {
   return (
 
     
-    <div>{ data }</div>
+    <div className='pets'>{ data }</div>
   )
 }
 
 export default PetList
-
-

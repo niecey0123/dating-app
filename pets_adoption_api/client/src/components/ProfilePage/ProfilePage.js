@@ -8,7 +8,7 @@ import '../../ProfilePage.css'
 
 const ProfilePage=(props)=>{
     let {name,email,age,location,description } = props.owner;
-   console.log(props);
+   console.log(props.owner);
 
    const deleteUser = async (owner)=>{
     console.log(owner.id)
@@ -39,8 +39,8 @@ const ProfilePage=(props)=>{
             <footer className="card-footer">
             <p className="card-footer-item">
                     <span>
-                        Edit <Link to={`/my-profile/${props.owner.id}`}
-                  onClick={() => props.setCurrentOwner(props.owner)}>Profile</Link>
+                        Edit <Link onClick={()=> props.setCurrentOwner(props.owner)}
+                              to={`/edit-owner/${props.owner.id}`}>Profile</Link>
                     </span>
                     </p>
                     <p className="card-footer-item">

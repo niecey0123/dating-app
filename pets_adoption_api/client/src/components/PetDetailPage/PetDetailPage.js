@@ -20,8 +20,8 @@ const PetDetailPage = ({currentPet}) => {
               </div>
                 <div className="media-content">
                   <p className="title is-4" id="petName">{currentPet.name}</p>
-                  <p className="subtitle is-6" id="breed">{currentPet.age} year's old</p>
-                  <p className="subtitle is-6" id="breed">{currentPet.breed}</p>
+                  <p className="subtitle is-6" id="age">{currentPet.age} year's old</p>
+                  <p className="subtitle is-6" id="dog">{currentPet.breed}</p>
               <div className="content">
               {currentPet.description}
               <br />

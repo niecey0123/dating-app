@@ -35,7 +35,7 @@ const OwnerDisplay = (props) => {
               <Link onClick={()=> props.setCurrentOwner(props.owner)}
                               to={`/edit-owner/${props.owner.id}`}>Edit Owner </Link> </button>
                       
-              <button onClick={() => deleteOwner(props.owner)}>Delete Pet</button>
+              <button onClick={() => deleteOwner(props.owner)}>Delete Owner</button>
           </footer>
           </div>
               );

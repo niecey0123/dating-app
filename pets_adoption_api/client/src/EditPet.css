@@ -1,0 +1,13 @@
+.updatePetPage{
+    width: 700px;
+    margin-left:25%;
+    margin-top:10%;
+}
+
+.updatePetPage h1{
+    text-align: center;
+    
+}
+label{
+    font-size: 18pt;
+}

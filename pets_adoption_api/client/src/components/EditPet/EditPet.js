@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom'
 import { petUpdate } from '../../services/api-helper';
+import '../../EditPet.css'
 
 
 class EditPet extends Component {
@@ -59,10 +60,12 @@ class EditPet extends Component {
     
     return (
       <div className="updatePetPage">
+      <h1>Edit Pet</h1>
       <form onSubmit={ this.onPetFormSubmit } >
         <div>
           <label htmlFor="name">Pet Name:</label>
           <input
+            className="input"
             id="name"
             type="text"
             name="name"
@@ -74,6 +77,7 @@ class EditPet extends Component {
         <div>
           <label htmlFor="age">Pet's Age:</label>
           <input
+            className="input"
             id="address"
             type="text"
             name="age"
@@ -85,6 +89,7 @@ class EditPet extends Component {
         <div>
         <label htmlFor="breed">Pet's Breed:</label>
           <input
+            className="input"
             id="breed"
             type="text"
             name="breed"
@@ -96,6 +101,7 @@ class EditPet extends Component {
         <div>
           <label htmlFor="location">Pet's Location:</label>
           <input
+            className="input"
             id="location"
             type="text"
             name="location"
@@ -107,6 +113,7 @@ class EditPet extends Component {
         <div>
           <label htmlFor="description">Pet's Bio:</label>
           <input
+            className="input"
             id="description"
             type="text"
             name="description"

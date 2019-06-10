@@ -13,7 +13,7 @@ const PetItem = (props) => {
     }
     
     return (
-
+        <div className='petCardContainer'>
           <div className="card">
           <Link to={`/pets/${props.pet.id}`}
                             onClick={() => props.setCurrentPet(props.pet)}>
@@ -34,7 +34,7 @@ const PetItem = (props) => {
           </div>
           </Link>
           <footer className="card-footer">
-          <button>
+          <button className='btn'>
               <Link onClick={()=> props.setCurrentPet(props.pet)}
                               to={`/edit-pet/${props.pet.id}`}>Edit Pet </Link> </button>
                       
@@ -42,6 +42,7 @@ const PetItem = (props) => {
                       
           <Link to='/matches'><button onClick={() => props.faves(3, props.pet.id)}>Like Pet</button></Link>
           </footer>
+          </div>
           </div>
               );
 }

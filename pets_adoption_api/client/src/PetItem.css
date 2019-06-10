@@ -1,3 +1,14 @@
-button{
-    padding: 5px;
+.petCardContainer{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+        /* border: black solid; */
+    background-image: url('https://backgrounddownload.com/wp-content/uploads/2018/09/pink-background-pic-4.jpg')   
+
+}
+
+.btn{
+    margin-left: 20%;
+
 }

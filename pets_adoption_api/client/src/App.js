@@ -100,13 +100,21 @@ class App extends Component  {
         />
               
          <Route exact path= '/create-owner' 
-              render={()=> <CreateOwner createddUser={this.createAnOwner} />} 
+              render={()=> <CreateOwner 
+                owners={this.state.owners}
+                setCurrentOwner={this.setCurrentOwner} 
+                currentOwner={this.state.currentOwner}
+                ownerData={this.getOwnerData}
+                createddUser={this.createAnOwner}
+               />} 
         />  
         
         <Route exact path= '/my-profile' 
-              render={()=> <ProfilePage user={this.state.user}
-              // setCurrentOwner={this.setCurrentOwner} 
-              />} 
+              render={()=> <ProfilePage 
+              owners={this.state.owners}
+                setCurrentOwner={this.setCurrentOwner} 
+                currentOwner={this.state.currentOwner}
+                ownerData={this.getOwnerData} />} 
         />  
 
         <Route exact path= '/edit-owner/:id' 
